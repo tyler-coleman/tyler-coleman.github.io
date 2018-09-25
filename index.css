@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #e3f2fd;
+    background-color: #97d2fb;
     color: #555b6e;
     margin: 0;
     font-family: 'Noto Serif JP', sans-serif;
@@ -8,6 +8,7 @@ body {
 
 p {
     margin: auto;
+    margin-bottom: 30px;
     width: 90%;
 }
 
@@ -24,6 +25,7 @@ p {
     box-sizing: border-box;
     z-index: 90;
     background-color: #db5461;
+    opacity: 0.9;
 }
 
 .Navbar ul {
@@ -63,46 +65,103 @@ p {
     color: white;
 }
 
+.TopPhoto {
+    background-image: url(assets/america-california-hill-631007.jpg);
+    background-size: 100%;
+    width: 100%;
+    padding-top: 61.20%;
+}
+
 section {
     position: relative;
-    padding: 20px 0;
+    padding: calc(20px + 5vw) 0;
     width: 100%;
-
     clip-path: polygon(
         0 0,
         100% calc(0% + 5vw),
         100% 100%,
         0 calc(100% - 5vw)
     );
-    padding: calc(20px + 5vw) 0;
 }
 
 .Bluebg {
-    background-color: #97d2fb;
-    padding: calc(20px + 5vw) 0;
+    background-color: #e3f2fd;
 }
 
 .Whitebg {
     background-color: #fff;
 }
 
-.Bluebg h3 {
+.Bluebg h2 {
     color: #241e4e;
 }
 
-.Whitebg h3 {
+.Whitebg h2 {
     color: #241e4e;
 }
 
 .Yellowbg {
     background-color: #bcd979;
-    padding: calc(20px + 5vw) 0;
 }
 
-.Yellowbg h3 {
+.Yellowbg h2 {
     color: #241e4e;
 }
 
 #About {
     padding-top: 60px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+    );
+}
+
+#Contact {
+    clip-path: polygon(
+        0 0,
+        100% calc(0% + 5vw),
+        100% 100%,
+        0 100%
+    );
+}  
+
+#Grad {
+    width: 60%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#Pedal {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+@media(min-width: 500px) {
+    #Pedal {
+        width: 400px;
+        float: right;
+    }
+}
+
+#LinkIcon {
+    float: left;
+}
+
+.LinkTitle {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.LinkTitle img {
+    height: 20px;
+    margin: 0 10px;
 }
