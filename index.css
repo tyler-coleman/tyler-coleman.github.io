@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    background-color: #e3f2fd;
+    color: #555b6e;
+    margin: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+p {
+    margin: auto;
+    width: 90%;
+}
+
+.Navbar {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+    background-color: #db5461;
+}
+
+.Navbar ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+}
+
+.Navbar li {
+    margin: 0;
+    box-sizing: border-box;
+	display: flex;
+    width: auto;
+    align-items: center;
+}
+
+.Navbar a {
+	text-decoration: none;
+	height: 100%;
+	box-sizing: border-box;
+    padding: 16px 10px;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+
+.Navbar a:hover,
+.Navbar a:active {
+    border-bottom: 2px solid white;
+}
+
+.Navbar a:visited {
+    color: white;
+}
+
+section {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+
+    clip-path: polygon(
+        0 0,
+        100% calc(0% + 5vw),
+        100% 100%,
+        0 calc(100% - 5vw)
+    );
+    padding: calc(20px + 5vw) 0;
+}
+
+.Bluebg {
+    background-color: #97d2fb;
+    padding: calc(20px + 5vw) 0;
+}
+
+.Whitebg {
+    background-color: #fff;
+}
+
+.Bluebg h3 {
+    color: #241e4e;
+}
+
+.Whitebg h3 {
+    color: #241e4e;
+}
+
+.Yellowbg {
+    background-color: #bcd979;
+    padding: calc(20px + 5vw) 0;
+}
+
+.Yellowbg h3 {
+    color: #241e4e;
+}
+
+#About {
+    padding-top: 60px;
+}
