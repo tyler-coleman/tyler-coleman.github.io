@@ -71,6 +71,7 @@ p {
 .Navbar a:hover,
 .Navbar a:active {
     border-bottom: 2px solid white;
+    cursor: pointer;
 }
 
 .Navbar a:visited {
@@ -177,7 +178,7 @@ section {
 #Right {
     width: 90%;
     display: block;
-    padding: 10px;
+    padding: 20px;
     margin: auto;
     border-radius: 50px;
 }
@@ -192,7 +193,7 @@ section {
 #Left {
     width: 90%;
     display: block;
-    padding: 10px;
+    padding: 20px;
     margin: auto;
     border-radius: 50px;
 }
