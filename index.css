@@ -15,6 +15,7 @@ p {
 .Content {
     width: 90%;
     margin: auto;
+    margin-bottom: 60px;
 }
 
 @media(min-width: 850px) {
@@ -30,7 +31,7 @@ p {
     top: 10px;
     left: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
@@ -79,19 +80,25 @@ p {
 .TopPhoto {
     background-image: url(assets/america-california-hill-631007.jpg);
     background-size: 100%;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
 }
 
 section {
     position: relative;
-    padding: calc(20px + 5vw) 0;
+    padding: calc(20px + 9vw) 0;
     width: 100%;
     clip-path: polygon(
         0 0,
-        100% calc(0% + 5vw),
+        100% calc(0% + 9vw),
         100% 100%,
-        0 calc(100% - 5vw)
+        0 calc(100% - 9vw)
     );
 }
 
@@ -119,20 +126,37 @@ section {
     color: #241e4e;
 }
 
-#About {
-    padding-top: 60px;
+#Resume {
     clip-path: polygon(
         0 0,
+        100% calc(0% + 9vw),
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
+}
+
+#About {
+    clip-path: polygon(
+        0 0,
+        100% calc(0% + 9vw),
+        100% calc(100% - 9vw),
+        0 100%
+    );
+}
+
+#Projects {
+    clip-path: polygon(
+        0 9vw,
         100% 0,
         100% 100%,
-        0 calc(100% - 5vw)
+        0 calc(100% - 9vw)
     );
 }
 
 #Contact {
     clip-path: polygon(
         0 0,
-        100% calc(0% + 5vw),
+        100% calc(0% + 9vw),
         100% 100%,
         0 100%
     );
