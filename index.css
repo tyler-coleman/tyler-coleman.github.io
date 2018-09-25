@@ -20,7 +20,7 @@ p {
 
 @media(min-width: 850px) {
     p {
-        width: 765px;
+        width: 700px;
     }
 }
 
@@ -134,6 +134,7 @@ section {
         100% 100%,
         0 calc(100% - 9vw)
     );
+    overflow: scroll;
 }
 
 #About {
@@ -221,4 +222,21 @@ section {
 .LinkTitle img {
     height: 20px;
     margin: 0 10px;
+}
+
+.ContactInfo {
+    color: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactInfo img {
+    height: 20px;
+    margin: 0 10px;
+}
+
+#ResumeImg {
+    width: 800px;
 }
