@@ -177,14 +177,14 @@ section {
 }
 
 #Right {
-    width: 90%;
+    width: 62%;
     display: block;
     padding: 20px;
     margin: auto;
     border-radius: 50px;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 650px) {
     #Right {
         width: 400px;
         float: right;
@@ -192,14 +192,14 @@ section {
 }
 
 #Left {
-    width: 90%;
+    width: 62%;
     display: block;
     padding: 20px;
     margin: auto;
     border-radius: 50px;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 650px) {
     #Left {
         width: 400px;
         float: left;
@@ -239,4 +239,5 @@ section {
 
 #ResumeImg {
     width: 800px;
+    margin: auto;
 }
