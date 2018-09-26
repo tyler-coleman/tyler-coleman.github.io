@@ -139,6 +139,10 @@ section {
     color: #241e4e;
 }
 
+h3 {
+    color: #241e4e;
+}
+
 #Resume {
     clip-path: polygon(
         0 0,
@@ -201,8 +205,7 @@ section {
 }  
 
 #Grad {
-    width: 60%;
-    border-radius: 50px;
+    width: 62%;
     margin-bottom: 30px;
 }
 
@@ -215,31 +218,43 @@ section {
 #Right {
     width: 62%;
     display: block;
-    padding: 20px;
     margin: auto;
-    border-radius: 50px;
+    margin-bottom: 30px;
+    clip-path: polygon(
+        0 0,
+        100% calc(0% + 3vw),
+        100% 100%,
+        0 calc(100% - 3vw)
+    );
 }
 
 @media(min-width: 650px) {
     #Right {
         width: 400px;
         float: right;
+        margin: 20px;
     }
 }
 
 #Left {
     width: 62%;
     display: block;
-    padding: 20px;
     margin: auto;
-    border-radius: 50px;
+    margin-bottom: 30px;
+    clip-path: polygon(
+        0 calc(0% + 3vw),
+        100% 0,
+        100% calc(100% - 3vw),
+        0 100%
+    );
 }
 
 @media(min-width: 650px) {
     #Left {
         width: 400px;
         float: left;
-    }
+        margin: 20px;
+    } 
 }
 
 #LinkIcon {
