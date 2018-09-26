@@ -1,21 +1,21 @@
 $(document).ready(() => {
 
-    $("#AboutMeLink").click(function() {
+    $("#AboutMeLink").click(() => {
         $(document.body).animate({
             scrollTop: $("#About").offset().top
         }, 700);
     });
-    $("#ProjectsLink").click(function() {
+    $("#ProjectsLink").click(() => {
         $(document.body).animate({
             scrollTop: $("#Projects").offset().top
         }, 700);
     });
-    $("#ResumeLink").click(function() {
+    $("#ResumeLink").click(() => {
         $(document.body).animate({
             scrollTop: $("#Resume").offset().top
         }, 700);
     });
-    $("#ContactLink").click(function() {
+    $("#ContactLink").click(() => {
         $(document.body).animate({
             scrollTop: $("#Contact").offset().top
         }, 700);
