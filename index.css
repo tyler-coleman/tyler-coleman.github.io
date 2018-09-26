@@ -143,14 +143,14 @@ section {
     clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
-        100% 100%,
-        0 calc(100% - 9vw)
+        100% calc(100% - 9vw),
+        0 100%
     );
     -webkit-clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
-        100% 100%,
-        0 calc(100% - 9vw)
+        100% calc(100% - 9vw),
+        0 100%
     );
     overflow: scroll;
 }
@@ -187,14 +187,14 @@ section {
 
 #Contact {
     clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
+        0 9vw,
+        100% 0,
         100% 100%,
         0 100%
     );
     -webkit-clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
+        0 9vw,
+        100% 0,
         100% 100%,
         0 100%
     );
