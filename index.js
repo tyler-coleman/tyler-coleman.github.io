@@ -20,4 +20,6 @@ $(document).ready(() => {
             scrollTop: $("#Contact").offset().top
         }, 700);
     });
+
+    $("#accordion").accordion();
 });

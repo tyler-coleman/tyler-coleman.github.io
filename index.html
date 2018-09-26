@@ -90,6 +90,7 @@
                     And now I'm in California. Sorry for rambling.
                 </p>
             </section>
+
             <section id="Projects" class="Bluebg">
                 <h2>Projects</h2>
                 <p>
@@ -101,48 +102,52 @@
                     in its own way. Here's some stuff I've been working on recently.
                 </p>
                 <h3>Digital Guitar Effects Pedal</h3>
-                <img src="assets/pedal.jpg" id="Right" />
-                <p>
-                    I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
-                    is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
-                    signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
-                    The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
-                    guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
-                    ever again.
-                </p>
-                <p>
-                    It's pretty ugly, I know.
-                </p>
-                <p>
-                    So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
-                    being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
-                </p>
+                <div>
+                    <img src="assets/pedal.jpg" id="Right" />
+                    <p>
+                        I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
+                        is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
+                        signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
+                        The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
+                        guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
+                        ever again.
+                    </p>
+                    <p>
+                        It's pretty ugly, I know.
+                    </p>
+                    <p>
+                        So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
+                        being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
+                    </p>
+                </div>
                 <div class="LinkTitle">
                     <h3>Rate My Lunch</h3>
                     <a href="https://rate-my-lunch.firebaseapp.com/">
                         <img src="assets/externallink.png" class="LinkIcon" />
                     </a>
                 </div>
-                
-                <p>
-                    I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
-                    deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
-                    Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
-                    to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
-                    thing is gonna blow up real quick.
-                </p>
-                <p>
-                    Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
-                    for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
-                    if you wanna upload something...
-                </p>
-                <p>
-                    Lunch pics only, please.
-                </p>
-                <p>
-                    Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch">rate-my-lunch</a> on github.
-                </p>
+                <div>
+                    <p>
+                        I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
+                        deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
+                        Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
+                        to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
+                        thing is gonna blow up real quick.
+                    </p>
+                    <p>
+                        Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
+                        for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
+                        if you wanna upload something...
+                    </p>
+                    <p>
+                        Lunch pics only, please.
+                    </p>
+                    <p>
+                        Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch">rate-my-lunch</a> on github.
+                    </p>
+                </div>
             </section>
+
             <section id="Resume" class="Whitebg">
                 <div class="LinkTitle">
                         <h2>Resume</h2>
@@ -172,3 +177,4 @@
         </div>
     </body>
 </html>
+
