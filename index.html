@@ -1,9 +1,8 @@
 <html>
     <head>
         <title>Tyler Coleman</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="index.js"></script>
         <link rel="stylesheet" href="index.css" />
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet" />
         <link rel="icon" type="image/png" href="assets/favicon.png" />
     </head>
@@ -22,138 +21,154 @@
         <img class="TopPhoto" src="assets/fullsizeoutput_d18d.jpeg">
         <div class="Content">
             <section id="About" class="Whitebg">
-                <h2>Hello,</h2>
-                <p>
-                    My name is Tyler, and it seems that you've somehow stumbled your way upon my personal website. 
-                    With time, I hope to grow this into a full-fledged, interactive experience that showcases everything 
-                    I've worked on and enjoy. For now, well, I guess this is just a space for me to ramble about myself.
-                </p>
-                <p>
-                        I grew up in the wee town of Cairo, Egypt after moving there with my family at 9 years old. Having 
-                        been an army brat my whole life prior, moving around wasn't so much an ordeal as it was an inevitability. 
-                        Nothing, however, could have prepared me for the sometimes awkward but always incredible experience that 
-                        would be the next 9 years of my adolescent life.
+                <div class="Text">
+                    <h2>Hello,</h2>
+                    <p>
+                        My name is Tyler, and it seems that you've somehow stumbled your way upon my personal website. 
+                        With time, I hope to grow this into a full-fledged, interactive experience that showcases everything 
+                        I've worked on and enjoy. For now, well, I guess this is just a space for me to ramble about myself.
                     </p>
-                <img src="assets/grad.jpg" id="Grad" />
-                <p>
-                    My decision to attend Tufts University in Boston following high school was a weird one, to say the least. 
-                    My first Boston winter was about as much of a shock as one would expect for someone who spent their previous 
-                    9 worried only about the occasional sandstorms and rain that came with winter in Egypt. In some ways, 
-                    readjusting to life here was harder than acclimatizing to life on the other side of the planet ever was.
-                </p>
-                <p>
-                    I graduated in 2017 with a B.S. in Electrical Engineering, and to be honest, I still don't know why I chose 
-                    EE. When I sat down with my advisor about a month into my freshman year to pre-declare, I asked him which 
-                    degree would prove most challenging and engaging over the course of my studies. His suggestion did not disappoint.
-                </p>
-                <h3>Some fun stuff about me:</h3>
-                <img src="assets/me.jpg" id="Right" />
-                <strong><p>I'm a musician!</p></strong>
-                <p>
-                    All my life I've been drawn to anything and everything music. From musicals to rock bands to acapella groups, 
-                    music has always provided the greatest escape in my life. I even got to play the oud in my final year of college 
-                    with the Arab Music Ensemble at Tufts.
-                </p>
-                <strong><p>I love to cook (and garden)!</p></strong>
-                <p>
-                    The one thing I missed most upon moving back to the U.S. was the food. Like, immediately missed it. So I reached out 
-                    to all the moms and dads and friends back home I could think of and began amassing all the knowledge of Egyptian 
-                    cuisine I could. And thus began a beautiful relationship with food, and cooking it in particular.   
-                </p>
-                <p>
-                    For me, cooking provides a means of catharsis in a way that very few things can. It also provides the same sort of 
-                    creatively engaging challenge as the most interesting of engineering problems. It pushes you to better yourself on 
-                    every attempt - to reason your way through flavors and throroughly consider which cooking technique is best for 
-                    whatever context. And the end result?
-                </p>
-                <p>Yum.</p>
-                <img src="assets/plane.JPG" id="Left" />
-                <strong><p>I'm working on my private pilot's license!</p></strong>
-                <p>
-                    I've wanted to be a pilot since before I left the womb. But my genes kinda suck, and it turns out they 
-                    need you to have full color vision in order to fly commercially. Eh, fair enough.
-                </p>
-                <p>
-                    A few months ago I took the plunge and booked my first ever flight with an instructor. The feeling of lifting off 
-                    and being in control for the first time is something I'll never forget. I've spent the last few months regularly 
-                    flying and am well on my way to my own license - they just won't let me fly at night!
-                </p>
-                <strong><p>Anways,</p></strong>
-                <p>
-                    You'll notice that I dont really have any sort of label for who I am or what I do anywhere here, and the reason 
-                    for that is simple: I don't really know. I didn't get where I am today by obsessing over the details at every 
-                    step of my life. Rather, the only thing I've ever really wanted is something to consistently challenge me to 
-                    grow, to learn, and to have fun in the process. With an open mind, I've learned that challenge can be found 
-                    just about anywhere.
-                </p>
-                <p>
-                    And now I'm in California. Sorry for rambling.
-                </p>
-                <p>- Tyler</p>
+                    <p>
+                            I grew up in the wee town of Cairo, Egypt after moving there with my family at 9 years old. Having 
+                            been an army brat my whole life prior, moving around wasn't so much an ordeal as it was an inevitability. 
+                            Nothing, however, could have prepared me for the sometimes awkward but always incredible experience that 
+                            would be the next 9 years of my adolescent life.
+                        </p>
+                    <img src="assets/grad.jpg" id="Grad" />
+                    <p>
+                        My decision to attend Tufts University in Boston following high school was a weird one, to say the least. 
+                        My first Boston winter was about as much of a shock as one would expect for someone who spent their previous 
+                        9 worried only about the occasional sandstorms and rain that came with winter in Egypt. In some ways, 
+                        readjusting to life here was harder than acclimatizing to life on the other side of the planet ever was.
+                    </p>
+                    <p>
+                        I graduated in 2017 with a B.S. in Electrical Engineering, and to be honest, I still don't know why I chose 
+                        EE. When I sat down with my advisor about a month into my freshman year to pre-declare, I asked him which 
+                        degree would prove most challenging and engaging over the course of my studies. His suggestion did not disappoint.
+                    </p>
+                    <h3>Some fun stuff about me:</h3>
+                    <p>(click to expand)</p>
+                    <img src="assets/me.jpg" class="Right" id="MusicianPic" style="display: none" />
+                    <div class="Title">
+                        <strong><p id="MusicianLabel" class="Expandable">I'm a musician!</p></strong>
+                    </div>
+                    <p  id="MusicianContent" style="display: none">
+                        All my life I've been drawn to anything and everything music. From musicals to rock bands to acapella groups, 
+                        music has always provided the greatest escape in my life. I even got to play the oud in my final year of college 
+                        with the Arab Music Ensemble at Tufts.
+                    </p>
+                    <div class="Title">
+                        <strong><p id="CookLabel" class="Expandable">I love to cook (and garden)!</p></strong>
+                    </div>
+                    <div id="CookContent" style="display: none">
+                        <p>
+                            The one thing I missed most upon moving back to the U.S. was the food. Like, immediately missed it. So I reached out 
+                            to all the moms and dads and friends back home I could think of and began amassing all the knowledge of Egyptian 
+                            cuisine I could. And thus began a beautiful relationship with food, and cooking it in particular.   
+                        </p>
+                        <p>
+                            For me, cooking provides a means of catharsis in a way that very few things can. It also provides the same sort of 
+                            creatively engaging challenge as the most interesting of engineering problems. It pushes you to better yourself on 
+                            every attempt - to reason your way through flavors and throroughly consider which cooking technique is best for 
+                            whatever context. And the end result?
+                        </p>
+                        <p>Yum.</p>
+                    </div>
+                    <img id="PilotPic" src="assets/plane.JPG" class="Left" style="display: none" />
+                    <div class="Title">
+                        <strong><p id="PilotLabel" class="Expandable">I'm working on my private pilot's license!</p></strong>
+                    </div>
+                    <div id="PilotContent" style="display: none">
+                        <p>
+                            I've wanted to be a pilot since before I left the womb. But my genes kinda suck, and it turns out they 
+                            need you to have full color vision in order to fly commercially. Eh, fair enough.
+                        </p>
+                        <p>
+                            A few months ago I took the plunge and booked my first ever flight with an instructor. The feeling of lifting off 
+                            and being in control for the first time is something I'll never forget. I've spent the last few months regularly 
+                            flying and am well on my way to my own license - they just won't let me fly at night!
+                        </p>
+                    </div>
+                    <strong><p>Anways,</p></strong>
+                    <p>
+                        You'll notice that I dont really have any sort of label for who I am or what I do anywhere here, and the reason 
+                        for that is simple: I don't really know. I didn't get where I am today by obsessing over the details at every 
+                        step of my life. Rather, the only thing I've ever really wanted is something to consistently challenge me to 
+                        grow, to learn, and to have fun in the process. With an open mind, I've learned that challenge can be found 
+                        just about anywhere.
+                    </p>
+                    <p>
+                        And now I'm in California. Sorry for rambling.
+                    </p>
+                    <p>- Tyler</p>
+                </div>
             </section>
 
             <section id="Projects" class="Bluebg">
-                <h2>Projects</h2>
-                <p>
-                    Despite finishing school with a degree in Electrical Engineering, I always found myself most drawn to classes that 
-                    involved coding - I guess it was something to do with the instant gratification that comes with watching your keystrokes turn into 
-                    something cool before your eyes in a matters of moments. I was a musician for a large portion of my life 
-                    prior to college, and realizing that I no longer had the time to pursue music as before was one of the hardest 
-                    things I had to come to terms with in school. Fortunately, I found coding to be just as creatively stimulating 
-                    in its own way. Here's some stuff I've been working on recently.
-                </p>
-                <h3>Digital Guitar Effects Pedal</h3>
-                <div>
-                    <img src="assets/pedal.jpg" id="Right" />
+                <div class="Text">
+                    <h2>Projects</h2>
                     <p>
-                        I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
-                        is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
-                        signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
-                        The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
-                        guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
-                        ever again.
+                        Despite finishing school with a degree in Electrical Engineering, I always found myself most drawn to classes that 
+                        involved coding - I guess it was something to do with the instant gratification that comes with watching your keystrokes turn into 
+                        something cool before your eyes in a matters of moments. I was a musician for a large portion of my life 
+                        prior to college, and realizing that I no longer had the time to pursue music as before was one of the hardest 
+                        things I had to come to terms with in school. Fortunately, I found coding to be just as creatively stimulating 
+                        in its own way. Here's some stuff I've been working on recently.
                     </p>
-                    <p>
-                        It's pretty ugly, I know.
-                    </p>
-                    <p>
-                        So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
-                        being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
-                    </p>
-                </div>
-                <div class="LinkTitle">
-                    <h3>Rate My Lunch</h3>
-                    <a href="https://rate-my-lunch.firebaseapp.com/" target="_blank">
-                        <img src="assets/externallink.png" class="LinkIcon" />
-                    </a>
-                </div>
-                <div>
-                    <p>
-                        I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
-                        deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
-                        Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
-                        to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
-                        thing is gonna blow up real quick.
-                    </p>
-                    <p>
-                        Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
-                        for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
-                        if you wanna upload something...
-                    </p>
-                    <p>
-                        Lunch pics only, please.
-                    </p>
-                    <p>
-                        Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch" target="_blank">rate-my-lunch</a> on github.
-                    </p>
-                </div>
-                <div class="LinkTitle">
-                        <h3>Burger Builder</h3>
+                    <div class="Title">
+                        <h3 class="Expandable" id="PedalLabel">Digital Guitar Effects Pedal</h3>
+                    </div>
+                    <div id="PedalContent">
+                        <img src="assets/pedal.jpg" id="PedalPic" class="Right" />
+                        <p>
+                            I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
+                            is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
+                            signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
+                            The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
+                            guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
+                            ever again.
+                        </p>
+                        <p>
+                            It's pretty ugly, I know.
+                        </p>
+                        <p>
+                            So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
+                            being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
+                        </p>
+                    </div>
+                    <div class="Title">
+                        <h3 class="Expandable" id="RateLabel">Rate My Lunch</h3>
+                        <a href="https://rate-my-lunch.firebaseapp.com/" target="_blank">
+                            <img src="assets/externallink.png" class="LinkIcon" />
+                        </a>
+                    </div>
+                    <div id="RateContent">
+                        <p>
+                            I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
+                            deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
+                            Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
+                            to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
+                            thing is gonna blow up real quick.
+                        </p>
+                        <p>
+                            Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
+                            for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
+                            if you wanna upload something...
+                        </p>
+                        <p>
+                            Lunch pics only, please.
+                        </p>
+                        <p>
+                            Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch" target="_blank">rate-my-lunch</a> on github.
+                        </p>
+                    </div>
+                    <div class="Title">
+                        <h3 class="Expandable" id="BurgerLabel">Burger Builder</h3>
                         <a href="https://burger-builder-b1bbd.firebaseapp.com/" target="_blank">
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
                     </div>
-                    <div>
+                    <div id="BurgerContent">
                         <p>
                             This one was built to serve as practice for React.js concepts/features as I was learning. The app itself is 
                             pretty straightforward - build a burger and order it. Previous orders are stored in a database and can be viewed
@@ -164,10 +179,11 @@
                             Source code at <a href="https://github.com/tyler-coleman/burger-builder" target="_blank">burger-builder</a> on github.
                         </p>
                     </div>
+                </div>
             </section>
 
             <section id="Resume" class="Whitebg">
-                <div class="LinkTitle">
+                <div class="Title">
                         <h2>Resume</h2>
                         <a href="assets/ResumeS2Sep18.pdf" target="_blank">
                             <img src="assets/externallink.png" class="LinkIcon" />
@@ -176,23 +192,29 @@
                 <div id="ResumeImg"><img src="assets/ResumeS2Sep18.png" id="ResumeImg"/></div>
             </section>
             <section id="Contact" class="Yellowbg">
-                <h2>Contact</h2>
-                <p>
-                    You made it this far! The connection must be real.
-                </p>
-                <p>
-                    Hit me up at any of the following:
-                </p>
-                <div class="ContactInfo">
-                    <img src="assets/icons8-secured-letter-26.png" />
-                    <a href="mailto:coleman.tyler@outlook.com">coleman.tyler@outlook.com</a>
-                </div>
-                <div class="ContactInfo">
-                    <img src="assets/icons8-phone-32.png" />
-                    (318) 518-0154
+                <div class="Text">
+                    <h2>Contact</h2>
+                    <p>
+                        You made it this far! The connection must be real.
+                    </p>
+                    <p>
+                        Hit me up at any of the following:
+                    </p>
+                    <div class="ContactInfo">
+                        <img src="assets/icons8-secured-letter-26.png" />
+                        <a href="mailto:coleman.tyler@outlook.com">coleman.tyler@outlook.com</a>
+                    </div>
+                    <div class="ContactInfo">
+                        <img src="assets/icons8-phone-32.png" />
+                        (318) 518-0154
+                    </div>
                 </div>
             </section>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
 
