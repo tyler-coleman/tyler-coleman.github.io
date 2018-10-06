@@ -1,9 +1,9 @@
 html{font-size:120%;} 
-@media(min-width:60em){html{font-size: 100%}}
+@media(min-width:668px){html{font-size: 100%}}
 
 body {
     text-align: center;
-    background-color: #97d2fb;
+    background-image: linear-gradient(rgb(190,210,230), rgb(132,172,233));
     color: #555b6e;
     margin: 0;
     font-family: 'Noto Serif JP', sans-serif;
@@ -111,14 +111,14 @@ section {
     clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
-        100% 100%,
-        0 calc(100% - 9vw)
+        100% calc(100% - 9vw),
+        0 100%
     );
     -webkit-clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
-        100% 100%,
-        0 calc(100% - 9vw)
+        100% calc(100% - 9vw),
+        0 100%
     );
 }
 
@@ -151,50 +151,9 @@ h3 {
 }
 
 #Resume {
-    clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
-        100% calc(100% - 9vw),
-        0 100%
-    );
-    -webkit-clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
-        100% calc(100% - 9vw),
-        0 100%
-    );
     overflow: scroll;
 }
 
-#About {
-    clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
-        100% calc(100% - 9vw),
-        0 100%
-    );
-    -webkit-clip-path: polygon(
-        0 0,
-        100% calc(0% + 9vw),
-        100% calc(100% - 9vw),
-        0 100%
-    );
-}
-
-#Projects {
-    clip-path: polygon(
-        0 9vw,
-        100% 0,
-        100% 100%,
-        0 calc(100% - 9vw)
-    );
-    -webkit-clip-path: polygon(
-        0 9vw,
-        100% 0,
-        100% 100%,
-        0 calc(100% - 9vw)
-    );
-}
 
 #Contact {
     clip-path: polygon(
@@ -206,7 +165,7 @@ h3 {
     -webkit-clip-path: polygon(
         0 9vw,
         100% 0,
-        100% calc(100% - 9vw),
+        100% 100%,
         0 100%
     );
 }  
