@@ -1,17 +1,22 @@
-html{font-size:120%;} 
-@media(min-width:668px){html{font-size: 100%}}
+html{font-size:100%;} 
+@media (max-width:800px) and (min-resolution: 288dpi) {
+    html {
+        font-size: 140%
+    }
+}
 
 body {
     text-align: center;
     background-image: linear-gradient(rgb(190,210,230), rgb(150, 170, 220), rgb(67,95,140));
     color: #555b6e;
     margin: 0;
-    font-family: 'Noto Serif JP', sans-serif;
+    font-family: 'Krub', sans-serif;
 }
 
 p {
     margin-bottom: 30px;
     width: auto;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 .Text {
