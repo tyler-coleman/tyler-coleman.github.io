@@ -3,7 +3,7 @@ html{font-size:120%;}
 
 body {
     text-align: center;
-    background-image: linear-gradient(rgb(190,210,230), rgb(132,172,233));
+    background-image: linear-gradient(rgb(190,210,230), rgb(67,95,140));
     color: #555b6e;
     margin: 0;
     font-family: 'Noto Serif JP', sans-serif;
@@ -86,7 +86,6 @@ p {
 }
 
 .TopPhoto {
-    background-image: url(assets/america-california-hill-631007.jpg);
     background-size: 100%;
     width: 100%;
     margin: auto;
@@ -102,6 +101,22 @@ p {
         100% 100%,
         0 calc(100% - 9vw)
     );
+}
+
+.BottomFade {
+    background-size: 100%;
+    width: 100%;
+    margin: auto;
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.BottomPhoto {
+    background-size: 100%;
+    width: 100%;
+    margin: auto;
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 section {
