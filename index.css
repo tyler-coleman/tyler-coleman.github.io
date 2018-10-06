@@ -103,20 +103,13 @@ p {
     );
 }
 
-.BottomFade {
-    background-size: 100%;
-    width: 100%;
-    margin: auto;
-    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-}
 
 .BottomPhoto {
     background-size: 100%;
     width: 100%;
     margin: auto;
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) ,rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 section {
