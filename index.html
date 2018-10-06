@@ -6,19 +6,34 @@
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <div class="Navbar">
             <nav>
                 <ul>
-                    <li><a id="AboutMeLink">About Me</a></li>
-                    <li><a id="ProjectsLink">Projects</a></li>
-                    <li><a id="ResumeLink">Resume</a></li>
-                    <li><a id="ContactLink">Contact</a></li>
+                    <li><a class="AboutMeLink">About Me</a></li>
+                    <li><a class="ProjectsLink">Projects</a></li>
+                    <li><a class="ResumeLink">Resume</a></li>
+                    <li><a class="ContactLink">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="SidebarToggle" id="Toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="Sidebar" style="display: none">
+            <ul>
+                <li><a class="AboutMeLink">About Me</a></li>
+                <li><a class="ProjectsLink">Projects</a></li>
+                <li><a class="ResumeLink">Resume</a></li>
+                <li><a class="ContactLink">Contact</a></li>
+            </ul>
+        </div>
+        <div class="Overlay" id="Overlay" style="display: none"></div>
         <img class="TopPhoto" src="assets/fullsizeoutput_d18d.jpeg">
         <div class="Content">
             <section id="About" class="Whitebg">

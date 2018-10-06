@@ -2,7 +2,7 @@ $(document).ready(() => {
 
     let activeSectionId = 'About';
 
-    $("#AboutMeLink").click(() => {
+    $(".AboutMeLink").click(() => {
 
         $(document.body).animate({
             scrollTop: $("#" + activeSectionId).offset().top
@@ -21,7 +21,7 @@ $(document).ready(() => {
         }
     });
 
-    $("#ProjectsLink").click(() => {
+    $(".ProjectsLink").click(() => {
 
         $(document.body).animate({
             scrollTop: $("#" + activeSectionId).offset().top
@@ -40,7 +40,7 @@ $(document).ready(() => {
         }
     });
 
-    $("#ResumeLink").click(() => {
+    $(".ResumeLink").click(() => {
 
         $(document.body).animate({
             scrollTop: $("#" + activeSectionId).offset().top
@@ -59,7 +59,7 @@ $(document).ready(() => {
         }
     });
 
-    $("#ContactLink").click(() => {
+    $(".ContactLink").click(() => {
         $(document.body).animate({
             scrollTop: $("#Contact").offset().top
         }, 700);
@@ -85,5 +85,15 @@ $(document).ready(() => {
     });
     $("#BurgerLabel").click(() => {
         $("#BurgerContent").toggle("fade");
+    });
+
+    $("#Toggle").click(() => {
+        $("#Overlay").toggle();
+        $(".Sidebar").toggle("slide");
+    });
+
+    $("#Overlay").click(() => {
+        $("#Overlay").hide();
+        $(".Sidebar").hide("slide");
     });
 });
