@@ -363,6 +363,10 @@ h3 {
 	display: block;
 }
 
+.Sidebar a:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 800px) {
 	.Sidebar {
 		display: none;
