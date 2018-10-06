@@ -3,7 +3,7 @@ html{font-size:120%;}
 
 body {
     text-align: center;
-    background-image: linear-gradient(rgb(190,210,230), rgb(67,95,140));
+    background-image: linear-gradient(rgb(190,210,230), rgb(150, 170, 220), rgb(67,95,140));
     color: #555b6e;
     margin: 0;
     font-family: 'Noto Serif JP', sans-serif;
@@ -176,6 +176,7 @@ h3 {
         100% 100%,
         0 100%
     );
+    padding-bottom: 50px;
 }  
 
 #Grad {
