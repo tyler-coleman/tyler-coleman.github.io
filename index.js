@@ -88,12 +88,12 @@ $(document).ready(() => {
     });
 
     $("#Toggle").click(() => {
-        $("#Overlay").toggle();
+        $("#Overlay").toggle("fade");
         $(".Sidebar").toggle("slide");
     });
 
     $("#Overlay").click(() => {
-        $("#Overlay").hide();
+        $("#Overlay").hide("fade");
         $(".Sidebar").hide("slide");
     });
 });
