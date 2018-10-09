@@ -100,6 +100,7 @@ p {
     background-size: 100%;
     width: 100%;
     margin: auto;
+    min-height: 65.2%;
     clip-path: polygon(
         0 0,
         100% 0,
