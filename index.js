@@ -1,7 +1,7 @@
 function pageReady() {
     $(".loader").fadeOut(null, () => {
         $(".Cover").fadeOut();
-        $(".Navbar").fadeIn(1500);
+        $(".Navbar").addClass("show");
     });
 }
 

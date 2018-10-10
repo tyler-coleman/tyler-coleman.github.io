@@ -2,7 +2,7 @@ html{font-size:100%;}
 
 @media (max-width: 800px) {
     .Navbar {
-        display: none;
+        visibility: hidden;
     }
 }
 
@@ -50,8 +50,15 @@ p {
     box-sizing: border-box;
     z-index: 90;
     background-color: #db5461;
+    opacity: 0;
+    transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+}
+
+.Navbar.show {
     opacity: 0.9;
 }
+
 @media (max-width: 800px) {
     .Navbar {
         display: none;
