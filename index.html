@@ -2,15 +2,22 @@
     <head>
         <title>Tyler Coleman</title>
         <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="loader.css" />
         <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <script src="index.js"></script>
     </head>
 
     <body>
-        <div class="Navbar">
+        <div class="Cover"></div>
+        <div class="loader"></div>
+        <div class="Navbar" style="display: none">
             <nav>
                 <ul>
                     <li><a class="AboutMeLink">About Me</a></li>
@@ -34,7 +41,7 @@
             </ul>
         </div>
         <div class="Overlay" id="Overlay" style="display: none"></div>
-        <img class="TopPhoto" src="assets/fullsizeoutput_d18d.jpeg">
+        <img class="TopPhoto" src="assets/fullsizeoutput_d18d.jpeg" onload="pageReady()" />
         <div class="Content">
             <section id="About" class="Whitebg">
                 <div class="Text">
@@ -230,10 +237,6 @@
         </div>
 
         <img src="assets/bottom.jpg" class="BottomPhoto" />
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="jquery-ui/jquery-ui.js"></script>
-        <script src="index.js"></script>
     </body>
 </html>
 

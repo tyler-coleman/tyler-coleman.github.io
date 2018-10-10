@@ -1,3 +1,10 @@
+function pageReady() {
+    $(".loader").fadeOut(null, () => {
+        $(".Cover").fadeOut();
+        $(".Navbar").fadeIn(1500);
+    });
+}
+
 $(document).ready(() => {
 
     let activeSectionId = 'About';
@@ -66,25 +73,22 @@ $(document).ready(() => {
     });
 
     $("#MusicianLabel").click(() => {
-        $("#MusicianContent").toggle("fade");
-        $("#MusicianPic").toggle("fade");
+        $("#MusicianContent").slideToggle();
     });
     $("#CookLabel").click(() => {
-        $("#CookContent").toggle("fade");
+        $("#CookContent").slideToggle();
     });
     $("#PilotLabel").click(() => {
-        $("#PilotContent").toggle("fade");
-        $("#PilotPic").toggle("fade");
+        $("#PilotContent").slideToggle();
     });
     $("#PedalLabel").click(() => {
-        $("#PedalContent").toggle("fade");
-        $("#PedalPic").toggle("fade");
+        $("#PedalContent").slideToggle();
     });
     $("#RateLabel").click(() => {
-        $("#RateContent").toggle("fade");
+        $("#RateContent").slideToggle();
     });
     $("#BurgerLabel").click(() => {
-        $("#BurgerContent").toggle("fade");
+        $("#BurgerContent").slideToggle();
     });
 
     $("#Toggle").click(() => {
