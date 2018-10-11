@@ -85,6 +85,7 @@ $(document).ready(() => {
     $("#PilotLabel").click(() => {
         $("#PilotContent").slideToggle();
     });
+
     $("#PedalLabel").click(() => {
         $("#PedalContent").slideToggle();
     });

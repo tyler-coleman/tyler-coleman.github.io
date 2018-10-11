@@ -114,7 +114,9 @@
                             flying and am well on my way to my own license - they just won't let me fly at night!
                         </p>
                     </div>
-                    <strong><p>Anways,</p></strong>
+                    <div class="Title">
+                        <strong><p>Anways,</p></strong>
+                    </div>
                     <p>
                         You'll notice that I dont really have any sort of label for who I am or what I do anywhere here, and the reason 
                         for that is simple: I don't really know. I didn't get where I am today by obsessing over the details at every 
@@ -142,8 +144,9 @@
                     <div class="Title">
                         <h3 class="Expandable" id="PedalLabel">Digital Guitar Effects Pedal</h3>
                     </div>
-                    <div id="PedalContent">
-                        <img src="assets/pedal.jpg" id="PedalPic" class="Right" />
+                    <div>(Teensy, embedded C)</div>
+                    <div id="PedalContent" class="ExpandableContent" style="display: none">
+                        <img src="assets/pedal.jpg" id="PedalPic" class="Right"/>
                         <p>
                             I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
                             is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
@@ -166,7 +169,8 @@
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
                     </div>
-                    <div id="RateContent">
+                    <div>(ReactJS, Redux)</div>
+                    <div id="RateContent" class="ExpandableContent" style="display: none">
                         <p>
                             I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
                             deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
@@ -192,7 +196,8 @@
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
                     </div>
-                    <div id="BurgerContent">
+                    <div>(ReactJS)</div>
+                    <div id="BurgerContent" class="ExpandableContent" style="display: none">
                         <p>
                             This one was built to serve as practice for React.js concepts/features as I was learning. The app itself is 
                             pretty straightforward - build a burger and order it. Previous orders are stored in a database and can be viewed
@@ -206,8 +211,9 @@
                     <div class="Title">
                         <h3 class="Expandable" id="FractalLabel">Fractal Generator</h3>
                     </div>
-                    <div id="FractalContent">
-                        <img src="assets/fractal.png" id="FractalPic" class="Left" />
+                    <div>(C++, SDL)</div>
+                    <div id="FractalContent" class="ExpandableContent" style="display: none">
+                        <img src="assets/fractal.png" id="FractalPic" class="Left"/>
                         <p>
                             This is an interactive desktop app written in C++ and utilizing the SDL graphics library. The program generates a 
                             fractal image representing the Mandelbrot set by implementing the escape-time algorithm. The program further 
