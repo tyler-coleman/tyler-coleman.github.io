@@ -208,18 +208,6 @@ h3 {
     display: block;
     margin: auto;
     margin-bottom: 30px;
-    clip-path: polygon(
-        0 0,
-        100% calc(0% + 3vw),
-        100% 100%,
-        0 calc(100% - 3vw)
-    );
-    -webkit-clip-path: polygon(
-        0 0,
-        100% calc(0% + 3vw),
-        100% 100%,
-        0 calc(100% - 3vw)
-    );
 }
 
 @media(min-width: 650px) {
@@ -235,18 +223,6 @@ h3 {
     display: block;
     margin: auto;
     margin-bottom: 30px;
-    clip-path: polygon(
-        0 calc(0% + 3vw),
-        100% 0,
-        100% calc(100% - 3vw),
-        0 100%
-    );
-    -webkit-clip-path: polygon(
-        0 calc(0% + 3vw),
-        100% 0,
-        100% calc(100% - 3vw),
-        0 100%
-    );
 }
 
 @media(min-width: 650px) {

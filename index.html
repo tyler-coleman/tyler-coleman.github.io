@@ -203,6 +203,35 @@
                             Source code at <a href="https://github.com/tyler-coleman/burger-builder" target="_blank">burger-builder</a> on github.
                         </p>
                     </div>
+                    <div class="Title">
+                        <h3 class="Expandable" id="FractalLabel">Fractal Generator</h3>
+                    </div>
+                    <div id="FractalContent">
+                        <img src="assets/fractal.png" id="FractalPic" class="Left" />
+                        <p>
+                            This is an interactive desktop app written in C++ and utilizing the SDL graphics library. The program generates a 
+                            fractal image representing the Mandelbrot set by implementing the escape-time algorithm. The program further 
+                            implements histogram coloring based on customizable ranges set by the user in main. Each range corresponds to 
+                            a subset of the histogram, and the colors at the start and end of the ranges are specified using a custom RGB 
+                            struct. Pixels whose iteration number falls in between the start and end of the range are given a color that 
+                            is a linear function of the difference between the start and end colors.
+                        </p>
+                        <p>
+                            To zoom in on a particular area, the user simply clicks the UI at the desired point. A zoom frame is added to an 
+                            array maintained by the program, and the dimensions of the next frame are calculated before the zoomed image is 
+                            re-rendered. To return to the last zoom frame, the user simply presses backspace. The max number of iterations 
+                            executed before the program determines a point falls within the Mandelbrot set is customizable via a constant 
+                            declared in Mandelbrot.h. Adjusting this constant trades off rendering speed for resolution.
+                        </p>
+                        <p>
+                            Next, I hope to add elements to the GUI that will allow the user to customize the histogram coloring ranges and 
+                            iterations per pixel without directly editing the source code. I also hope to optimize the drawing of the fractal 
+                            by improving on the current implementation of the escape-time algorithm.
+                        </p>
+                        <p>
+                            Source code at <a href="https://github.com/tyler-coleman/fractal-generator" target="_blank">fractal-generator</a> on github.
+                        </p>
+                    </div>
                 </div>
             </section>
 

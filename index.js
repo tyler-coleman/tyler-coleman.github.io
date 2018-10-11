@@ -94,6 +94,9 @@ $(document).ready(() => {
     $("#BurgerLabel").click(() => {
         $("#BurgerContent").slideToggle();
     });
+    $("#FractalLabel").click(() => {
+        $("#FractalContent").slideToggle();
+    });
 
     $("#Toggle").click(() => {
         $("#Overlay").toggle("fade");
