@@ -41,9 +41,7 @@ const expandSelection = (element) => {
 }
 
 $(document).ready(() => {
-    $(document.body).animate({
-        scrollTop: 0
-    });
+    $("html, body").animate({ scrollTop: 0 });
 
     let activeSectionId = 'About';
 
