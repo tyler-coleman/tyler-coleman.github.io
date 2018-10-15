@@ -41,8 +41,6 @@ p {
     position: fixed;
     top: 20px;
     left: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
@@ -62,20 +60,22 @@ p {
     height: 45px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
     .Navbar {
         display: none;
     }
 }
 
 .Navbar ul {
-    display: inline-block;
     margin: 0;
+    width: 60%;
+    margin-left: 30%;
     padding: 0;
     list-style: none;
     display: flex;
     flex-flow: row;
     align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     transition: opacity 1s;
 }
@@ -351,7 +351,7 @@ h3 {
 	list-style: none;
 	display: flex;
 	flex-flow: column;
-	align-items: center;
+	justify-content: center;
 	height: 100%;
 }
 
