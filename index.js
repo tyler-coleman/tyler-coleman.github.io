@@ -1,13 +1,14 @@
 const pageReady = () => {
     $(".loader").fadeOut(null, () => {
-        $(".Cover").fadeOut();
+        $(".Cover").fadeOut(null, () => {
+            $(".Navbar").addClass('show');
+        });
         let width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
         }, 1000, () => {
             $(".Navbar").addClass('expand');
         });
-        $(".Navbar").addClass('show');
     });
 }
 
