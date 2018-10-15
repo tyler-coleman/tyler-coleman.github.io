@@ -4,8 +4,9 @@
         <link rel="stylesheet" href="index.css" />
         <link rel="stylesheet" href="loader.css" />
         <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,10 +21,10 @@
         <div class="Navbar">
             <nav>
                 <ul>
-                    <li><a class="AboutMeLink">About Me</a></li>
-                    <li><a class="ProjectsLink">Projects</a></li>
-                    <li><a class="ResumeLink">Resume</a></li>
-                    <li><a class="ContactLink">Contact</a></li>
+                    <li><a class="AboutMeLink">about me</a></li>
+                    <li><a class="ProjectsLink">projects</a></li>
+                    <li><a class="ResumeLink">resume</a></li>
+                    <li><a class="ContactLink">connect</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,18 +35,18 @@
         </div>
         <div class="Sidebar" style="display: none">
             <ul>
-                <li><a class="AboutMeLink">About Me</a></li>
-                <li><a class="ProjectsLink">Projects</a></li>
-                <li><a class="ResumeLink">Resume</a></li>
-                <li><a class="ContactLink">Contact</a></li>
+                <li><a class="AboutMeLink">about Me</a></li>
+                <li><a class="ProjectsLink">projects</a></li>
+                <li><a class="ResumeLink">resume</a></li>
+                <li><a class="ContactLink">contact</a></li>
             </ul>
         </div>
         <div class="Overlay" id="Overlay" style="display: none"></div>
-        <img class="TopPhoto" src="assets/fullsizeoutput_d18d.jpeg" onload="pageReady()" />
+        <img class="hero-image" src="assets/fullsizeoutput_d18d.jpeg">
         <div class="Content">
             <section id="About" class="Whitebg">
                 <div class="Text">
-                    <h2>Hello,</h2>
+                    <h2>hello,</h2>
                     <p>
                         My name is Tyler, and this is my personal website. 
                         With time, I hope to grow this into a full-fledged, interactive experience that showcases everything 
@@ -71,13 +72,13 @@
                         systems to web applications to physical systems modeling with Python. 
                         I'm at my absolute happiest when learning and working with new technologies.
                     </p>
-                    <h3 style="margin-bottom: 0px">Some fun stuff about me:</h3>
+                    <h3 style="margin-bottom: 0px">some fun stuff about me:</h3>
                     <p style="margin-top: 0">(click to expand)</p>
                     <img src="assets/me.jpg" class="Right" id="MusicianPic" style="display: none" />
                     <div class="Title">
                         <strong><p id="MusicianLabel" class="Expandable">I'm a musician!</p></strong>
                     </div>
-                    <div id="MusicianContent" style="display: none">
+                    <div id="MusicianContent" class="ExpandableContent"style="display: none">
                         <p>
                             All my life I've been drawn to anything and everything music. From musicals to rock bands to acapella groups, 
                             music has always provided the greatest escape in my life. I even got to play the oud in my final year of college 
@@ -87,7 +88,7 @@
                     <div class="Title">
                         <strong><p id="CookLabel" class="Expandable">I love to cook (and garden)!</p></strong>
                     </div>
-                    <div id="CookContent" style="display: none">
+                    <div id="CookContent" class="ExpandableContent"style="display: none">
                         <p>
                             The one thing I missed most upon moving back to the U.S. was the food. So I reached out 
                             to all the moms and dads and friends back home I could think of and began amassing all the knowledge of Egyptian 
@@ -104,7 +105,7 @@
                     <div class="Title">
                         <strong><p id="PilotLabel" class="Expandable">I'm working on my private pilot's license!</p></strong>
                     </div>
-                    <div id="PilotContent" style="display: none">
+                    <div id="PilotContent" class="ExpandableContent"style="display: none">
                         <p>
                             I've wanted to be a pilot since I was a little kid. That dream got shot down pretty early when I learned 
                             they don't let colorblind folk fly commercial airplanes. Fair enough, I guess.
@@ -135,7 +136,7 @@
 
             <section id="Projects" class="Bluebg" style="display: none">
                 <div class="Text">
-                    <h2>Projects</h2>
+                    <h2>projects</h2>
                     <p>
                         Despite finishing school with a degree in Electrical Engineering, I always found myself most drawn to classes that 
                         involved coding. I was a musician for a large portion of my life 
@@ -144,7 +145,7 @@
                         in its own way. Here's some stuff I've been working on recently.
                     </p>
                     <div class="Title">
-                        <h3 class="Expandable" id="PedalLabel">Digital Guitar Effects Pedal</h3>
+                        <h3 class="Expandable" id="PedalLabel">digital guitar effects pedal</h3>
                     </div>
                     <div>(Teensy, embedded C)</div>
                     <div id="PedalContent" class="ExpandableContent" style="display: none">
@@ -166,7 +167,7 @@
                         </p>
                     </div>
                     <div class="Title">
-                        <h3 class="Expandable" id="RateLabel">Rate My Lunch</h3>
+                        <h3 class="Expandable" id="RateLabel">rate my lunch</h3>
                         <a href="https://rate-my-lunch.firebaseapp.com/" target="_blank">
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
@@ -193,7 +194,7 @@
                         </p>
                     </div>
                     <div class="Title">
-                        <h3 class="Expandable" id="BurgerLabel">Burger Builder</h3>
+                        <h3 class="Expandable" id="BurgerLabel">burger builder</h3>
                         <a href="https://burger-builder-b1bbd.firebaseapp.com/" target="_blank">
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
@@ -211,7 +212,7 @@
                         </p>
                     </div>
                     <div class="Title">
-                        <h3 class="Expandable" id="FractalLabel">Fractal Generator</h3>
+                        <h3 class="Expandable" id="FractalLabel">fractal generator</h3>
                     </div>
                     <div>(C++, SDL)</div>
                     <div id="FractalContent" class="ExpandableContent" style="display: none">
@@ -245,7 +246,7 @@
 
             <section id="Resume" class="Whitebg" style="display: none">
                 <div class="Title">
-                        <h2>Resume</h2>
+                        <h2>resume</h2>
                         <a href="assets/ResumeS2Oct18.pdf" target="_blank">
                             <img src="assets/externallink.png" class="LinkIcon" />
                         </a>
@@ -254,7 +255,7 @@
             </section>
             <section id="Contact" class="Yellowbg">
                 <div class="Text">
-                    <h2>Contact</h2>
+                    <h2>connect</h2>
                     <p>
                         You made it this far! The connection must be real.
                     </p>
@@ -273,7 +274,7 @@
             </section>
         </div>
 
-        <img src="assets/bottom.jpg" class="BottomPhoto" />
+        <img src="assets/bottom.jpg" class="BottomPhoto" onload="pageReady()"/>
     </body>
 </html>
 

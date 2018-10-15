@@ -4,12 +4,46 @@ const pageReady = () => {
         let width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
-        }, 1000);
+        }, 1000, () => {
+            $(".Navbar").addClass('expand');
+        });
         $(".Navbar").addClass('show');
     });
 }
 
+const collapseSelection = (element) => {
+    const sectionHeight = element.scrollHeight;
+
+    let elementTransition = element.style.transition;
+    element.style.transition = '';
+
+    requestAnimationFrame(() => {
+        element.style.height = sectionHeight + 'px';
+        element.style.transition = elementTransition;
+
+        requestAnimationFrame(() => {
+            element.style.height = 0 + 'px';
+        });
+    });
+
+    element.setAttribute('data-collapsed', true);
+}
+
+const expandSelection = (element) => {
+    const sectionHeight = element.scrollHeight;
+
+    element.style.height = sectionHeight + 'px';
+    element.addEventListener('transitionend', (e) => {
+        element.removeEventListener('transitioned', arguments.callee);
+    });
+
+    element.setAttribute('data-collapsed', 'false');
+}
+
 $(document).ready(() => {
+    $(document.body).animate({
+        scrollTop: 0
+    });
 
     let activeSectionId = 'About';
 
@@ -77,26 +111,26 @@ $(document).ready(() => {
     });
 
     $("#MusicianLabel").click(() => {
-        $("#MusicianContent").slideToggle();
+        $("#MusicianContent").toggle('fade');
     });
     $("#CookLabel").click(() => {
-        $("#CookContent").slideToggle();
+        $("#CookContent").toggle('fade');
     });
     $("#PilotLabel").click(() => {
-        $("#PilotContent").slideToggle();
+        $("#PilotContent").toggle('fade');
     });
 
     $("#PedalLabel").click(() => {
-        $("#PedalContent").slideToggle();
+        $("#PedalContent").toggle('fade');
     });
     $("#RateLabel").click(() => {
-        $("#RateContent").slideToggle();
+        $("#RateContent").toggle('fade');
     });
     $("#BurgerLabel").click(() => {
-        $("#BurgerContent").slideToggle();
+        $("#BurgerContent").toggle('fade');
     });
     $("#FractalLabel").click(() => {
-        $("#FractalContent").slideToggle();
+        $("#FractalContent").toggle('fade');
     });
 
     $("#Toggle").click(() => {

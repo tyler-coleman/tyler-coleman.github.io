@@ -2,7 +2,7 @@ html{font-size:100%;}
 
 body {
     text-align: center;
-    background-image: linear-gradient(rgb(190,210,230), rgb(150, 170, 220), rgb(67,95,140));
+    background-image: linear-gradient(rgb(190,210,230), rgb(150, 170, 220), rgb(70,95,120));
     color: #555b6e;
     margin: 0;
     font-family: 'Krub', sans-serif;
@@ -10,7 +10,9 @@ body {
 
 p {
     height: auto;
-    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 1.1em;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 .Text {
@@ -30,11 +32,14 @@ p {
     }
 }
 
+
 .Navbar {
-    width: 100%;
-    height: 45px;
+    width: 0;
+    margin: auto;
+    height: 5px;
+    overflow: hidden;
     position: fixed;
-    top: 10px;
+    top: 20px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -44,12 +49,17 @@ p {
     z-index: 90;
     background-color: #db5461;
     opacity: 0;
-    transition: opacity 1.5s;
-    -webkit-transition: opacity 1.5s;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
 }
 
 .Navbar.show {
     opacity: 0.9;
+    width: 100%;
+}
+
+.Navbar.expand {
+    height: 45px;
 }
 
 @media (max-width: 800px) {
@@ -67,10 +77,12 @@ p {
     flex-flow: row;
     align-items: center;
     height: 100%;
+    transition: opacity 1s;
 }
 
 .Navbar li {
     margin: 0;
+    height: 100%;
     box-sizing: border-box;
 	display: flex;
     width: auto;
@@ -96,7 +108,7 @@ p {
     color: white;
 }
 
-.TopPhoto {
+.hero-image {
     background-size: 100%;
     width: 100%;
     margin: auto;
@@ -128,6 +140,12 @@ section {
     position: relative;
     padding: calc(20px + 9vw) 0;
     width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: auto;
+    box-sizing: border-box;
+    border-left: 4px solid #bcd979;
+    border-right: 4px solid #bcd979;
     clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
@@ -140,6 +158,13 @@ section {
         100% calc(100% - 9vw),
         0 100%
     );
+}
+
+.ExpandableContent {
+    overflow: hidden;
+    height: auto;
+    transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
 }
 
 .Bluebg {
