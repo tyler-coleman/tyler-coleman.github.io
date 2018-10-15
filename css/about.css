@@ -18,6 +18,42 @@
     margin-bottom: 120px;
 }
 
+.heading {
+    position: relative;
+    margin: auto;
+    left: -50px;
+}
+
+.heading h1 {
+    font-size: 4em;
+}
+
+.heading p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 799px) {
+    .left-content, .right-content {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .heading {
+        position: static;
+    }
+
+    .right-content img {
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .wrapper {
+        display: block;
+    }
+}
+
 .row {
     display: block;
     justify-content: space-evenly;
@@ -153,18 +189,4 @@
 }
 .skillbar-bar.green {
     background-color: #bcd979;
-}
-
-.heading {
-    position: relative;
-    margin: auto;
-    left: -50px;
-}
-
-.heading h1 {
-    font-size: 4em;
-}
-
-.heading p {
-    font-size: 1.5em;
 }
