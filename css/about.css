@@ -148,6 +148,13 @@
     background-color: #db5461;
 }
 
+.skillbar-title.green {
+    background-color: #bcd979;
+}
+.skillbar-bar.green {
+    background-color: #bcd979;
+}
+
 .heading {
     position: relative;
     margin: auto;
