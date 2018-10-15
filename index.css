@@ -96,10 +96,12 @@ p {
     padding: 16px 10px;
     border-bottom: 2px solid transparent;
     color: white;
+    transition: border-bottom 0.2s;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .Navbar a:hover,
-.Navbar a:active {
+.Navbar a.active {
     border-bottom: 2px solid white;
     cursor: pointer;
 }
@@ -366,7 +368,8 @@ h3 {
     text-decoration: none;
 	width: 100%;
 	box-sizing: border-box;
-	display: block;
+    display: block;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 .Sidebar a:hover {
