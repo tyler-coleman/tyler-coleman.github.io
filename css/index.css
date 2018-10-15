@@ -172,6 +172,33 @@ section {
     );
 }
 
+#Contact {
+    clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+    -webkit-clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+    padding-bottom: 50px;
+    padding-right: 64px;
+}  
+
+@media (max-width: 550px) {
+    section {
+        border-left: none;
+    }
+
+    #Contact {
+        padding-right: 0;
+    }
+}
+
 .ExpandableContent {
     overflow: hidden;
     height: auto;
@@ -211,23 +238,6 @@ h3 {
     overflow: scroll;
 }
 
-
-#Contact {
-    clip-path: polygon(
-        0 9vw,
-        100% 0,
-        100% 100%,
-        0 100%
-    );
-    -webkit-clip-path: polygon(
-        0 9vw,
-        100% 0,
-        100% 100%,
-        0 100%
-    );
-    padding-bottom: 50px;
-    padding-right: 64px;
-}  
 
 #Grad {
     width: 62%;

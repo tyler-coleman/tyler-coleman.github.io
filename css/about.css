@@ -51,6 +51,7 @@
 
     .wrapper {
         display: block;
+        margin-bottom: 60px;
     }
 }
 
@@ -116,7 +117,9 @@
 	position:relative;
 	display:block;
     margin-bottom:8px;
-	width:90%;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
 	background:#eee;
     height:25px;
     box-sizing: border-box;
@@ -133,6 +136,12 @@
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
+}
+
+@media (max-width: 550px) {
+    .skillbar {
+        width: 100%;
+    }
 }
 
 .skillbar-title {
