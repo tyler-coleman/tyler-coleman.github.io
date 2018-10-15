@@ -11,8 +11,8 @@ body {
 p {
     height: auto;
     font-size: 1.1em;
-    font-family: Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family: 'Nunito', Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 .Text {
@@ -47,8 +47,8 @@ p {
     z-index: 90;
     background-color: #db5461;
     opacity: 0;
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
 }
 
 .Navbar.show {
@@ -146,8 +146,7 @@ section {
     overflow: hidden;
     height: auto;
     box-sizing: border-box;
-    border-left: 4px solid #bcd979;
-    border-right: 4px solid #bcd979;
+    border-left: 64px solid #bcd979;
     clip-path: polygon(
         0 0,
         100% calc(0% + 9vw),
@@ -216,6 +215,7 @@ h3 {
         0 100%
     );
     padding-bottom: 50px;
+    padding-right: 64px;
 }  
 
 #Grad {
@@ -236,12 +236,17 @@ h3 {
     margin-bottom: 30px;
 }
 
-@media(min-width: 650px) {
+@media(min-width: 750px) {
     .Right {
         width: 400px;
         float: right;
         margin: 20px;
     }
+    .Left {
+        width: 400px;
+        float: left;
+        margin: 20px;
+    } 
 }
 
 .Left {
@@ -249,14 +254,6 @@ h3 {
     display: block;
     margin: auto;
     margin-bottom: 30px;
-}
-
-@media(min-width: 650px) {
-    .Left {
-        width: 400px;
-        float: left;
-        margin: 20px;
-    } 
 }
 
 #LinkIcon {
@@ -387,7 +384,6 @@ h3 {
         display: none;
     }
 }
-
     
 .Overlay {
     width: 100%;

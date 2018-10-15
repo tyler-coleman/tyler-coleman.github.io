@@ -6,7 +6,7 @@ const pageReady = () => {
         let width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
-        }, 1000, () => {
+        }, 1300, () => {
             $(".Navbar").addClass('expand');
         });
     });
