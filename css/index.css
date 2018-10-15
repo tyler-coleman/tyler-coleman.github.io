@@ -68,6 +68,12 @@ p {
     .Navbar {
         display: none;
     }
+    .hero-image {
+        display: none;
+    }
+    section {
+        margin-top: 20px;
+    }
 }
 
 .Navbar ul {
