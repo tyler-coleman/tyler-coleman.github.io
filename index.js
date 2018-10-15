@@ -46,6 +46,12 @@ $(document).ready(() => {
 
     let activeSectionId = 'About';
 
+    $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({
+            width: $(this).attr('percent')
+        },6000);
+    });
+
     $(".AboutMeLink").click(() => {
 
         $(document.body).animate({

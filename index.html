@@ -1,14 +1,15 @@
 <html>
     <head>
         <title>Tyler Coleman</title>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="loader.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/loader.css" />
+        <link rel="stylesheet" href="css/about.css" />
         <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Krub:200,300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,82 +49,107 @@
         <div class="Content">
             <section id="About" class="Whitebg">
                 <div class="Text">
-                    <h2>hello,</h2>
+                    <div class="wrapper">
+                        <div class="heading">
+                            <h1>hello,</h1>
+                            <p>i'm Tyler. here's a little about me</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                            <div class="left-content">
+                                    <div class="row">
+                                        <div class="label" id="developer">developer</div>
+                                        <div class="label" id="musician">musician</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="label" id="pilot">pilot</div>
+                                        <div class="label" id="cook">cook</div>
+                                        <div class="label" id="tck">tck</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="label" id="unemployed">unemployed</div>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <img src="assets/head.jpg" />
+                                </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="left-content">
+                            <div class="skillbar" percent="70%">
+                                <div class="skillbar-title">
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar" percent="75%">
+                                <div class="skillbar-title">
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar" percent="70%">
+                                    <div class="skillbar-title">
+                                        <span>JS/JQuery</span>
+                                    </div>
+                                    <div class="skillbar-bar"></div>
+                                </div>
+                            <div class="skillbar" percent="65%">
+                                <div class="skillbar-title">
+                                    <span>ReactJS</span>
+                                </div>
+                                <div class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar" percent="80%">
+                                <div class="skillbar-title red">
+                                    <span>C/C++</span>
+                                </div>
+                                <div class="skillbar-bar red"></div>
+                            </div>
+                            <div class="skillbar" percent="60%">
+                                <div class="skillbar-title red">
+                                    <span>Java</span>
+                                </div>
+                                <div class="skillbar-bar red"></div>
+                            </div>
+                            <div class="skillbar" percent="55%">
+                                <div class="skillbar-title red">
+                                    <span>Python</span>
+                                </div>
+                                <div class="skillbar-bar red"></div>
+                            </div>
+                            <div class="skillbar" percent="75%">
+                                <div class="skillbar-title red">
+                                    <span>Spanish</span>
+                                </div>
+                                <div class="skillbar-bar red"></div>
+                            </div>
+                            <div class="skillbar" percent="50%">
+                                <div class="skillbar-title red">
+                                    <span>Arabic</span>
+                                </div>
+                                <div class="skillbar-bar red"></div>
+                            </div>
+                        </div>
+                        <div class="right-content" id="school">
+                            <div class="label" id="degree">b.s. electrical engineering, tufts university '17</div>
+                            <div id="courses">
+                                <div>web development</div>
+                                <div>data structures</div>
+                                <div>microprocessor architecture</div>
+                                <div>digital signal processing</div>
+                                <div>computational physics</div>
+                                <div>feedback control systems</div>
+                                <div>communications systems</div>
+                                <div>probabilistic systems analysis</div>
+                                <div>linear systems</div>
+                                <div>differential equations</div>
+                            </div>
+                        </div>
+                    </div>
                     <p>
-                        I'm Tyler
-                    </p>
-                    <p>
-                        I grew up in the wee town of Cairo, Egypt after moving there with my family at 9 years old. Having 
-                        been an army brat my whole life prior, moving around wasn't so much an ordeal as it was an inevitability. 
-                        Nothing, however, could have prepared me for the sometimes awkward but always incredible experience that 
-                        would be the next 9 years of my life.
-                    </p>
-                    <!-- <img src="assets/grad.jpg" id="Grad" /> -->
-                    <p>
-                        I attended Tufts University in Boston following high school. 
-                        My first Boston winter was about as much of a shock as one would expect for someone who spent their previous 
-                        9 worried only about the occasional sandstorms and rain that came with winter in Egypt. In some ways, 
-                        readjusting to life here was harder than acclimatizing to life on the other side of the planet ever was.
-                    </p>
-                    <p>
-                        I graduated in 2017 with a B.S. in Electrical Engineering, with cum laude honors. While in my program, 
-                        I placed a strong emphasis on coding courses and project work. This led to me graduating with a very broad
-                        set of technical skills, having written code for all sorts of projects ranging from embedded signal processing
-                        systems to web applications to physical systems modeling with Python. 
-                        I'm at my absolute happiest when learning and working with new technologies.
-                    </p>
-                    <h3 style="margin-bottom: 0px">some fun stuff about me:</h3>
-                    <p style="margin-top: 0">(click to expand)</p>
-                    <img src="assets/me.jpg" class="Right" id="MusicianPic" style="display: none" />
-                    <div class="Title">
-                        <strong><p id="MusicianLabel" class="Expandable">I'm a musician!</p></strong>
-                    </div>
-                    <div id="MusicianContent" class="ExpandableContent"style="display: none">
-                        <p>
-                            All my life I've been drawn to anything and everything music. From musicals to rock bands to acapella groups, 
-                            music has always provided the greatest escape in my life. I even got to play the oud in my final year of college 
-                            with the Arab Music Ensemble at Tufts.
-                        </p>
-                    </div>
-                    <div class="Title">
-                        <strong><p id="CookLabel" class="Expandable">I love to cook (and garden)!</p></strong>
-                    </div>
-                    <div id="CookContent" class="ExpandableContent"style="display: none">
-                        <p>
-                            The one thing I missed most upon moving back to the U.S. was the food. So I reached out 
-                            to all the moms and dads and friends back home I could think of and began amassing all the knowledge of Egyptian 
-                            cuisine I could. And thus began a beautiful relationship with food, and cooking it in particular.   
-                        </p>
-                        <p>
-                            For me, cooking provides a means of catharsis in a way that very few things can. It also provides a similar sort of 
-                            creatively engaging challenge as the most interesting of engineering problems. It pushes you to better yourself on 
-                            every attempt. And the end result?
-                        </p>
-                        <p>Yum.</p>
-                    </div>
-                    <img id="PilotPic" src="assets/plane.JPG" class="Left" style="display: none" />
-                    <div class="Title">
-                        <strong><p id="PilotLabel" class="Expandable">I'm working on my private pilot's license!</p></strong>
-                    </div>
-                    <div id="PilotContent" class="ExpandableContent"style="display: none">
-                        <p>
-                            I've wanted to be a pilot since I was a little kid. That dream got shot down pretty early when I learned 
-                            they don't let colorblind folk fly commercial airplanes. Fair enough, I guess.
-                        </p>
-                        <p>
-                            As it turns out, however, they'll still let you fly your own planes.
-                            A few months ago I took the plunge and booked my first ever flight with an instructor. The feeling of lifting off 
-                            and being in control for the first time is something I'll never forget. I've spent the last few months regularly 
-                            flying and am well on my way to my own license - they just won't let me fly at night!
-                        </p>
-                    </div>
-                    <div class="Title">
-                        <strong><p>Anways,</p></strong>
-                    </div>
-                    <p>
-                        You'll notice that I dont really have any sort of label for who I am or what I do anywhere here, and the reason 
-                        for that is simple: I don't really know. I didn't get where I am today by obsessing over the details at every 
-                        step of my life. Rather, the only thing I've ever really wanted is something to consistently challenge me to 
+                        You'll notice that I dont really have any specific label for who I am or what I do anywhere here, and the reason 
+                        for that is simple: I don't really know. The only thing I've ever really wanted is something to consistently challenge me to 
                         grow, to learn, and to have fun in the process. With an open mind, I've learned that challenge can be found 
                         just about anywhere.
                     </p>
