@@ -82,8 +82,8 @@ p {
     z-index: 90;
     background-color: #db5461;
     opacity: 0.9;
-    transition: width 0.8s, height 0.5s 0.8s;
-    -webkit-transition: width 0.8s, height 0.5s 0.8s;
+    transition: width 0.4s, height 0.3s 0.5s;
+    -webkit-transition: width 0.4s, height 0.3s 0.5s;
     padding: 0;
 }
 
