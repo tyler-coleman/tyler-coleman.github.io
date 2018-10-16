@@ -1,6 +1,9 @@
+let ready = false;
+
 const pageReady = () => {
     $(".loader").fadeOut(null, () => {
         $(".Cover").fadeOut();
+        ready = true;
         let width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
@@ -42,12 +45,6 @@ $(document).ready(() => {
 
     let activeSectionId = 'About';
 
-    $('.skillbar').each(function(){
-        $(this).find('.skillbar-bar').animate({
-            width: $(this).attr('percent')
-        },6000);
-    });
-
     $(".HomeLink").click(() => {
         let width = window.innerWidth;
         $(document.body).animate({
@@ -56,12 +53,29 @@ $(document).ready(() => {
     });
 
     $(window).scroll(() => {
-        let target = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 50;
-        console.log(target);
-        if ($(window).scrollTop() > target) {
+        const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 50;
+        const skillsTarget = $("#skills").offset().top;
+
+        let windowBottom = 0;
+        if (ready) {
+            windowBottom = $(window).scrollTop() + window.innerHeight;
+        }
+
+        console.log(windowBottom);
+        console.log(skillsTarget);
+
+        
+        if ($(window).scrollTop() > navbarTarget) {
             $(".Navbar").addClass('show');
         } else {
             $(".Navbar").removeClass('show');
+        }
+        if (windowBottom > skillsTarget) {
+            $('.skillbar').each(function(){
+                $(this).find('.skillbar-bar').animate({
+                    width: $(this).attr('percent')
+                },1500);
+            });
         }
     });
 
