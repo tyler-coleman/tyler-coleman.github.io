@@ -1,14 +1,10 @@
 const pageReady = () => {
     $(".loader").fadeOut(null, () => {
-        $(".Cover").fadeOut(null, () => {
-            $(".Navbar").addClass('show');
-        });
+        $(".Cover").fadeOut();
         let width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
-        }, 1300, () => {
-            $(".Navbar").addClass('expand');
-        });
+        }, 1300);
     });
 }
 
@@ -50,6 +46,23 @@ $(document).ready(() => {
         $(this).find('.skillbar-bar').animate({
             width: $(this).attr('percent')
         },6000);
+    });
+
+    $(".HomeLink").click(() => {
+        let width = window.innerWidth;
+        $(document.body).animate({
+            scrollTop: width / 15
+        });
+    });
+
+    $(window).scroll(() => {
+        let target = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 50;
+        console.log(target);
+        if ($(window).scrollTop() > target) {
+            $(".Navbar").addClass('show');
+        } else {
+            $(".Navbar").removeClass('show');
+        }
     });
 
     $(".AboutMeLink").click(() => {
