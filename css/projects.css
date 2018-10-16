@@ -47,3 +47,18 @@
     color: white;
     background-color: #555;
 }
+
+#Projects {
+    clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
+    -webkit-clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
+}
