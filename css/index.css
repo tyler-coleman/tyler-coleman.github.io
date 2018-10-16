@@ -290,25 +290,6 @@ h3 {
     float: left;
 }
 
-.Title {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 200px;
-}
-
-.Title img {
-    height: 20px;
-    margin: 0 10px;
-}
-
-.Title h3 {
-    margin-bottom: 0px;
-}
-
 .ContactInfo {
     color: inherit;
     display: flex;
@@ -325,11 +306,6 @@ h3 {
 #ResumeImg {
     width: 800px;
     margin: auto;
-}
-
-.Expandable:hover {
-    cursor: pointer;
-    color: #db5461;
 }
 
 .SidebarToggle {

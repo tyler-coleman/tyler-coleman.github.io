@@ -152,21 +152,6 @@ $(document).ready(() => {
         $("#PilotContent").toggle('fade');
     });
 
-    $("#PedalLabel").click(() => {
-        $("#PedalContent").slideToggle();
-        $("#PedalPic").toggle('fade');
-    });
-    $("#RateLabel").click(() => {
-        $("#RateContent").slideToggle();
-    });
-    $("#BurgerLabel").click(() => {
-        $("#BurgerContent").slideToggle();
-    });
-    $("#FractalLabel").click(() => {
-        $("#FractalContent").slideToggle();
-        $("#FractalPic").toggle('fade');
-    });
-
     $("#Toggle").click(() => {
         $("#Overlay").toggle("fade");
         $(".Sidebar").toggle("slide");

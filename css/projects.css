@@ -1,15 +1,49 @@
 #PedalPic {
     width: 400px;
+    margin: auto;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #888;
-    float: none;
+    display: block;
 }
 
 #FractalPic {
     width: 400px;
+    margin: auto;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #888;
-    float: none;
+    display: block;
+}
+
+.Title {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+.Title img {
+    height: 20px;
+    margin: 0 10px;
+}
+
+.Title h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.project-title {
+    padding: 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.project-title:hover {
+    cursor: default;
+    color: white;
+    background-color: #555;
 }
