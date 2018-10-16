@@ -53,7 +53,7 @@ $(document).ready(() => {
     });
 
     $(window).scroll(() => {
-        const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 50;
+        const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 150;
         const skillsTarget = $("#skills").offset().top;
 
         let windowBottom = 0;
@@ -153,16 +153,18 @@ $(document).ready(() => {
     });
 
     $("#PedalLabel").click(() => {
-        $("#PedalContent").toggle('fade');
+        $("#PedalContent").slideToggle();
+        $("#PedalPic").toggle('fade');
     });
     $("#RateLabel").click(() => {
-        $("#RateContent").toggle('fade');
+        $("#RateContent").slideToggle();
     });
     $("#BurgerLabel").click(() => {
-        $("#BurgerContent").toggle('fade');
+        $("#BurgerContent").slideToggle();
     });
     $("#FractalLabel").click(() => {
-        $("#FractalContent").toggle('fade');
+        $("#FractalContent").slideToggle();
+        $("#FractalPic").toggle('fade');
     });
 
     $("#Toggle").click(() => {

@@ -3,11 +3,26 @@
     position: relative;
 }
 
+.left-content {
+    float: left;
+}
+
+.right-content {
+    float: right;
+}
+
+.left-content p, .right-content p {
+    margin: 20px;
+}
+
 .right-content img {
-    width: 360px;
-    border-radius: 180px;
     float: left;
     z-index: -10;
+}
+
+#HeadShot {
+    width: 360px;
+    border-radius: 180px;
 }
 
 .wrapper {
@@ -15,7 +30,8 @@
     position: relative;
     height: auto;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .heading {
@@ -88,7 +104,7 @@
 #school {
     box-sizing: border-box;
     border-left: 1px solid #555;
-    top: -70px;
+    top: 40px;
 }
 
 .skillbar {
@@ -183,6 +199,7 @@
         width: 90%;
         display: block;
         margin: auto;
+        float: none;
     }
 
     .heading {
@@ -197,7 +214,7 @@
 
     .wrapper {
         display: block;
-        margin-bottom: 60px;
+        margin: 60px auto;
     }
 
     #school {

@@ -1,0 +1,15 @@
+#PedalPic {
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    float: none;
+}
+
+#FractalPic {
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    float: none;
+}
