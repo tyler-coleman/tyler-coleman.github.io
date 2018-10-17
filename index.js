@@ -46,7 +46,7 @@ $(document).ready(() => {
     let activeSectionId = 'About';
 
     $(".HomeLink").click(() => {
-        let width = window.innerWidth;
+        const width = window.innerWidth;
         $(document.body).animate({
             scrollTop: width / 15
         });
@@ -82,21 +82,22 @@ $(document).ready(() => {
     $(".AboutMeLink").click(() => {
 
         $(document.body).animate({
-            scrollTop: $("#About").offset().top
+            scrollTop: $("#About").offset().top + 20
         });
     });
 
     $(".ProjectsLink").click(() => {
 
         $(document.body).animate({
-            scrollTop: $("#Projects").offset().top
+            scrollTop: $("#Projects").offset().top + 20
         });
     });
 
     $(".ContactLink").click(() => {
+
         $(document.body).animate({
-            scrollTop: $("#Contact").offset().top
-        }, 700);
+            scrollTop: $("#Contact").offset().top + 20
+        });
     });
 
     $("#Toggle").click(() => {
