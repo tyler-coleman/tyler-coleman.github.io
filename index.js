@@ -11,39 +11,8 @@ const pageReady = () => {
     });
 }
 
-const collapseSelection = (element) => {
-    const sectionHeight = element.scrollHeight;
-
-    let elementTransition = element.style.transition;
-    element.style.transition = '';
-
-    requestAnimationFrame(() => {
-        element.style.height = sectionHeight + 'px';
-        element.style.transition = elementTransition;
-
-        requestAnimationFrame(() => {
-            element.style.height = 0 + 'px';
-        });
-    });
-
-    element.setAttribute('data-collapsed', true);
-}
-
-const expandSelection = (element) => {
-    const sectionHeight = element.scrollHeight;
-
-    element.style.height = sectionHeight + 'px';
-    element.addEventListener('transitionend', (e) => {
-        element.removeEventListener('transitioned', arguments.callee);
-    });
-
-    element.setAttribute('data-collapsed', 'false');
-}
-
 $(document).ready(() => {
     $("html, body").animate({ scrollTop: 0 });
-
-    let activeSectionId = 'About';
 
     $(".HomeLink").click(() => {
         const width = window.innerWidth;
@@ -60,10 +29,6 @@ $(document).ready(() => {
         if (ready) {
             windowBottom = $(window).scrollTop() + window.innerHeight;
         }
-
-        console.log(windowBottom);
-        console.log(skillsTarget);
-
         
         if ($(window).scrollTop() > navbarTarget) {
             $(".Navbar").addClass('show');
@@ -80,21 +45,18 @@ $(document).ready(() => {
     });
 
     $(".AboutMeLink").click(() => {
-
         $(document.body).animate({
             scrollTop: $("#About").offset().top + 20
         });
     });
 
     $(".ProjectsLink").click(() => {
-
         $(document.body).animate({
             scrollTop: $("#Projects").offset().top + 20
         });
     });
 
     $(".ContactLink").click(() => {
-
         $(document.body).animate({
             scrollTop: $("#Contact").offset().top + 20
         });
