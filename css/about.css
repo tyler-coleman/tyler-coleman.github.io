@@ -25,7 +25,7 @@
     border-radius: 180px;
 }
 
-.wrapper {
+.flex-wrapper {
     display: flex;
     position: relative;
     height: auto;
@@ -34,7 +34,7 @@
     margin-top: 60px;
 }
 
-.wrapper:after {
+.flex-wrapper:after {
     content: "";
     clear: both;
     display: table;
@@ -219,7 +219,7 @@
         margin: auto;
     }
 
-    .wrapper {
+    .flex-wrapper {
         display: block;
         margin: 60px auto;
     }

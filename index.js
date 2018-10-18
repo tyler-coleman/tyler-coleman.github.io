@@ -1,5 +1,24 @@
 let ready = false;
 
+const projects = {
+    pedal: {
+        tags: ['c', 'c++', 'embedded', 'signal processing', 'hardware design', 'arduino', 'firmware'],
+        matches: 0
+    },
+    rate: {
+        tags: ['react', 'html', 'jsx', 'css', 'redux', 'rest', 'firebase', 'web'],
+        matches: 0
+    },
+    burger: {
+        tags: ['react', 'html', 'jsx', 'css', 'firebase', 'web'],
+        matches: 0
+    },
+    fractal: {
+        tags: ['c++', 'graphics', 'sdl', 'file systems'],
+        matches: 0
+    }
+}
+
 const pageReady = () => {
     $(".loader").fadeOut(null, () => {
         $(".Cover").fadeOut();
@@ -11,7 +30,33 @@ const pageReady = () => {
     });
 }
 
+const projectSearch = () => {
+    const searchString = event.target.value;
+
+    for (let key in projects) {
+        if (projects[key].tags.find((str) => {
+            return str.includes(searchString);
+        })) {
+            projects[key].matches = projects[key].matches + 1;
+            $("#" + key).attr('match', 'true');
+        } else {
+            projects[key].matches = projects[key].matches + 1;
+            $("#" + key).attr('match', 'false');
+        }
+    }
+
+    for (let key in projects) {
+        const el = $("#" + key);
+        if (el.attr('match') !== 'true') {
+            el.hide();
+        } else {
+            el.show();
+        }
+    }
+}
+
 $(document).ready(() => {
+
     $("html, body").animate({ scrollTop: 0 });
 
     $(".HomeLink").click(() => {
@@ -36,7 +81,7 @@ $(document).ready(() => {
             $(".Navbar").removeClass('show');
         }
         if (windowBottom > skillsTarget) {
-            $('.skillbar').each(function(){
+            $('.skillbar').each(() => {
                 $(this).find('.skillbar-bar').animate({
                     width: $(this).attr('percent')
                 },1500);

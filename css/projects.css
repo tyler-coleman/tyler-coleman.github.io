@@ -62,3 +62,19 @@
         0 calc(100% - 9vw)
     );
 }
+
+.project-input {
+    margin-top: 40px;
+    width: 170px;
+    height: 20px;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 100%;
+    letter-spacing: 2px;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+.project-input:focus {
+    outline: none;
+}

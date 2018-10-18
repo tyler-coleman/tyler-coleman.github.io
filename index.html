@@ -59,12 +59,12 @@
         <img class="hero-image" src="assets/fullsizeoutput_d18d.jpg">
         <div class="Content">
             <section id="About" class="Whitebg">
-                <div class="wrapper">
+                <div class="flex-wrapper">
                     <div class="heading">
                         <h1>hello,</h1>
                     </div>
                 </div>
-                <div class="wrapper">
+                <div class="flex-wrapper">
                         <div class="left-content">
                             <p style="font-size: 1.6em">i'm Tyler, the</p>
                             <div class="row">
@@ -84,7 +84,7 @@
                             <img src="assets/head.jpg" id="HeadShot"/>
                         </div>
                 </div>
-                <div class="wrapper">
+                <div class="flex-wrapper">
                     <div class="left-content" id="skills">
                         <div class="skillbar" percent="70%">
                             <div class="skillbar-title">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrapper">
+                <div class="flex-wrapper">
                     <div class="Text">
                         <p>
                             You'll notice that I dont really have any specific label for who I am or what I do anywhere here, and the reason 
@@ -174,188 +174,199 @@
             </section>
 
             <section id="Projects" class="Bluebg">
-                <div class="wrapper">
+                <div class="flex-wrapper">
                     <div class="heading">
                         <h1>projects</h1>
                         <p>i like to code. here's some stuff i've been working on</p>
+                        <input type="text" placeholder="search by tag" class="project-input" oninput="projectSearch()"/>
                     </div>
-                </div>
-
-
-                <div class="wrapper" id="PedalContent">
-                    <div class="left-content">
-                        <div class="Title">
-                            <h3 class="project-title" id="PedalLabel">digital guitar effects pedal</h3>
-                        </div>
-                        <p>(Teensy, embedded C)</p>
-                        <p>
-                            I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
-                            is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
-                            signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
-                            The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
-                            guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
-                            ever again.
-                        </p>
-                        <p>
-                            It's pretty ugly, I know.
-                        </p>
-                        <p>
-                            So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
-                            being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
-                        </p>
-                    </div>
-                    <div class="right-content">
-                        <img src="assets/pedal.jpg" id="PedalPic" />
-                        <p style="font-size: 1.6em">tags</p>
-                        <div class="row">
-                            <div class="label" id="developer">c</div>
-                            <div class="label" id="developer">c++</div>
-                            <div class="label" id="musician">embedded</div>
-                        </div>
-                        <div class="row">
-                            <div class="label" id="pilot">signal processing</div>
-                            <div class="label" id="cook">hardware design</div>
-                        </div>
-                        <div class="row">
-                            <div class="label" id="unemployed">arduino</div>
-                            <div class="label" id="tck">firmware</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="RateContent" class="wrapper">
-                    <div class="left-content">
-                        <div class="Title">
-                            <h3 class="project-title" id="RateLabel">rate my lunch</h3>
-                            <a href="https://rate-my-lunch.firebaseapp.com/" target="_blank">
-                                <img src="assets/externallink.png" class="LinkIcon" />
-                            </a>
-                        </div>
-                        <p>(ReactJS, Redux)</p>
-                        <p>
-                            I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
-                            deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
-                            Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
-                            to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
-                            thing is gonna blow up real quick.
-                        </p>
-                        <p>
-                            Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
-                            for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
-                            if you wanna upload something...
-                        </p>
-                        <p>
-                            Lunch pics only, please.
-                        </p>
-                        <p>
-                            Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch" target="_blank">rate-my-lunch</a> on github.
-                        </p>
-                    </div>
-                    <div class="right-content">
-                            <p style="font-size: 1.6em">tags</p>
-                            <div class="row">
-                                <div class="label" id="developer">react</div>
-                                <div class="label" id="musician">html</div>
-                            </div>
-                            <div class="row">
-                                <div class="label" id="pilot">css</div>
-                                <div class="label" id="cook">redux</div>
-                                <div class="label" id="tck">rest</div>
-                            </div>
-                            <div class="row">
-                                <div class="label" id="unemployed">firebase</div>
-                                <div class="label" id="unemployed">web</div>
-                            </div>
-                        </div>
                 </div>
 
                 
-                <div id="BurgerContent" class="wrapper">
-                    <div class="left-content">
-                        <div class="Title">
-                            <h3 class="Expandable" id="BurgerLabel">burger builder</h3>
-                            <a href="https://burger-builder-b1bbd.firebaseapp.com/" target="_blank">
-                                <img src="assets/externallink.png" class="LinkIcon" />
-                            </a>
+                <div id="projects-wrapper">
+                    <div class="project" match="false" id="pedal">
+                        <div class="flex-wrapper" id="PedalContent">
+                            <div class="left-content">
+                                <div class="Title">
+                                    <h3 class="project-title" id="PedalLabel">digital guitar effects pedal</h3>
+                                </div>
+                                <p>(Teensy, embedded C)</p>
+                                <p>
+                                    I was inspired to do this while working my way through a text on designing audio plugins in C++. The hardware here 
+                                    is pretty simple. An op-amp acting as a buffer biases the input signal from the guitar to 4.5V, then attenuates the 
+                                    signal to 3Vpk-pk before feeding it through an audio adapter to the line input of Cortex M4-based development board. 
+                                    The idea from here is simple - implement whatever DSP algorithms I want and upload the new code to yield whatever 
+                                    guitar effect my heart desires (and my brain can figure out). I'll never spend $200 on a boutique digital delay 
+                                    ever again.
+                                </p>
+                                <p>
+                                    It's pretty ugly, I know.
+                                </p>
+                                <p>
+                                    So far I've managed to implement a simple delay and some filters based on parameters set by potentiometers also 
+                                    being polled in real-time by the DSC. I hope to expand the pedal's capabilities in the future.
+                                </p>
+                            </div>
+                            <div class="right-content">
+                                <img src="assets/pedal.jpg" id="PedalPic" />
+                                <p style="font-size: 1.6em">tags</p>
+                                <div class="row">
+                                    <div class="label" id="developer">c</div>
+                                    <div class="label" id="developer">c++</div>
+                                    <div class="label" id="musician">embedded</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="pilot">signal processing</div>
+                                    <div class="label" id="cook">hardware design</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="unemployed">arduino</div>
+                                    <div class="label" id="tck">firmware</div>
+                                </div>
+                            </div>
                         </div>
-                        <p>(ReactJS)</p>
-                        <p>
-                            This one was built to serve as practice for React.js concepts/features as I was learning. The app itself is 
-                            pretty straightforward - build a burger and order it. Previous orders are stored in a database and can be viewed
-                            again after placed. There's some form validation and routing and other fun stuff going on. Check it out. Just 
-                            don't use your real contact info.
-                        </p>
-                        <p>
-                            Source code at <a href="https://github.com/tyler-coleman/burger-builder" target="_blank">burger-builder</a> on github.
-                        </p>
                     </div>
-                    <div class="right-content">
-                        <p style="font-size: 1.6em">tags</p>
-                        <div class="row">
-                            <div class="label" id="developer">html</div>
-                            <div class="label" id="musician">react</div>
+
+                    <div class="project" match="false" id="rate">
+                        <div id="RateContent" class="flex-wrapper">
+                            <div class="left-content">
+                                <div class="Title">
+                                    <h3 class="project-title" id="RateLabel">rate my lunch</h3>
+                                    <a href="https://rate-my-lunch.firebaseapp.com/" target="_blank">
+                                        <img src="assets/externallink.png" class="LinkIcon" />
+                                    </a>
+                                </div>
+                                <p>(ReactJS, Redux)</p>
+                                <p>
+                                    I've recently become very interested in front-end technologies like React. I took an online course diving pretty 
+                                    deep into its features as well as those of Redux, and wanted to build something to practice what I'd learned. 
+                                    Thus, I present Rate My Lunch - a faux social media where users post pictures of their lunch and assign ratings 
+                                    to others' posts. Right now it's really just my roommates (actually it's really just me), but I'm betting this 
+                                    thing is gonna blow up real quick.
+                                </p>
+                                <p>
+                                    Give it a try! I've included an option to login with preset credentials so you don't actually have to sign up 
+                                    for anything. It's a global feed and there isn't exactly any sort of filtering of the posted images so... you know, 
+                                    if you wanna upload something...
+                                </p>
+                                <p>
+                                    Lunch pics only, please.
+                                </p>
+                                <p>
+                                    Source code at <a href="https://github.com/tyler-coleman/rate-my-lunch" target="_blank">rate-my-lunch</a> on github.
+                                </p>
+                            </div>
+                            <div class="right-content">
+                                <p style="font-size: 1.6em">tags</p>
+                                <div class="row">
+                                    <div class="label" id="developer">react</div>
+                                    <div class="label" id="musician">html</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="pilot">css</div>
+                                    <div class="label" id="cook">redux</div>
+                                    <div class="label" id="tck">rest</div>
+                                    <div class="label" id="tck">jsx</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="unemployed">firebase</div>
+                                    <div class="label" id="unemployed">web</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="label" id="pilot">web</div>
-                            <div class="label" id="cook">firebase</div>
-                            <div class="label" id="tck">css</div>
+                    </div>
+
+                    <div class="project" match="false" id="burger">
+                        <div id="BurgerContent" class="flex-wrapper">
+                            <div class="left-content">
+                                <div class="Title">
+                                    <h3 class="Expandable" id="BurgerLabel">burger builder</h3>
+                                    <a href="https://burger-builder-b1bbd.firebaseapp.com/" target="_blank">
+                                        <img src="assets/externallink.png" class="LinkIcon" />
+                                    </a>
+                                </div>
+                                <p>(ReactJS)</p>
+                                <p>
+                                    This one was built to serve as practice for React.js concepts/features as I was learning. The app itself is 
+                                    pretty straightforward - build a burger and order it. Previous orders are stored in a database and can be viewed
+                                    again after placed. There's some form validation and routing and other fun stuff going on. Check it out. Just 
+                                    don't use your real contact info.
+                                </p>
+                                <p>
+                                    Source code at <a href="https://github.com/tyler-coleman/burger-builder" target="_blank">burger-builder</a> on github.
+                                </p>
+                            </div>
+                            <div class="right-content">
+                                <p style="font-size: 1.6em">tags</p>
+                                <div class="row">
+                                    <div class="label" id="developer">html</div>
+                                    <div class="label" id="musician">react</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="pilot">web</div>
+                                    <div class="label" id="cook">firebase</div>
+                                    <div class="label" id="tck">css</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="unemployed">routing</div>
+                                    <div class="label" id="unemployed">jsx</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="label" id="unemployed">routing</div>
+                    </div>
+
+                    <div class="project" match="false" id="fractal">
+                        <div id="FractalContent" class="flex-wrapper">
+                            <div class="left-content">
+                                <div class="Title">
+                                    <h3 class="Expandable" id="FractalLabel">fractal generator</h3>
+                                </div>
+                                <p>(C++, SDL)</p>
+                                <p>
+                                    This is an interactive desktop app written in C++ and utilizing the SDL graphics library. The program generates a 
+                                    fractal image representing the Mandelbrot set by implementing the escape-time algorithm. The program further 
+                                    implements histogram coloring based on customizable ranges set by the user in main. Each range corresponds to 
+                                    a subset of the histogram, and the colors at the start and end of the ranges are specified using a custom RGB 
+                                    struct. Pixels whose iteration number falls in between the start and end of the range are given a color that 
+                                    is a linear function of the difference between the start and end colors.
+                                </p>
+                                <p>
+                                    To zoom in on a particular area, the user simply clicks the UI at the desired point. A zoom frame is added to an 
+                                    array maintained by the program, and the dimensions of the next frame are calculated before the zoomed image is 
+                                    re-rendered. To return to the last zoom frame, the user simply presses backspace. The max number of iterations 
+                                    executed before the program determines a point falls within the Mandelbrot set is customizable via a constant 
+                                    declared in Mandelbrot.h. Adjusting this constant trades off rendering speed for resolution.
+                                </p>
+                                <p>
+                                    Next, I hope to add elements to the GUI that will allow the user to customize the histogram coloring ranges and 
+                                    iterations per pixel without directly editing the source code. I also hope to optimize the drawing of the fractal 
+                                    by improving on my current implementation of the escape-time algorithm.
+                                </p>
+                                <p>
+                                    Source code at <a href="https://github.com/tyler-coleman/fractal-generator" target="_blank">fractal-generator</a> on github.
+                                </p>
+                            </div>
+                            <div class="right-content">
+                                <img src="assets/fractal.png" id="FractalPic"/>
+                                <p style="font-size: 1.6em">tags</p>
+                                <div class="row">
+                                    <div class="label" id="developer">c++</div>
+                                    <div class="label" id="musician">graphics</div>
+                                </div>
+                                <div class="row">
+                                    <div class="label" id="pilot">sdl</div>
+                                    <div class="label" id="cook">file systems</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
 
-
-                <div id="FractalContent" class="wrapper">
-                    <div class="left-content">
-                        <div class="Title">
-                            <h3 class="Expandable" id="FractalLabel">fractal generator</h3>
-                        </div>
-                        <p>(C++, SDL)</p>
-                        <p>
-                            This is an interactive desktop app written in C++ and utilizing the SDL graphics library. The program generates a 
-                            fractal image representing the Mandelbrot set by implementing the escape-time algorithm. The program further 
-                            implements histogram coloring based on customizable ranges set by the user in main. Each range corresponds to 
-                            a subset of the histogram, and the colors at the start and end of the ranges are specified using a custom RGB 
-                            struct. Pixels whose iteration number falls in between the start and end of the range are given a color that 
-                            is a linear function of the difference between the start and end colors.
-                        </p>
-                        <p>
-                            To zoom in on a particular area, the user simply clicks the UI at the desired point. A zoom frame is added to an 
-                            array maintained by the program, and the dimensions of the next frame are calculated before the zoomed image is 
-                            re-rendered. To return to the last zoom frame, the user simply presses backspace. The max number of iterations 
-                            executed before the program determines a point falls within the Mandelbrot set is customizable via a constant 
-                            declared in Mandelbrot.h. Adjusting this constant trades off rendering speed for resolution.
-                        </p>
-                        <p>
-                            Next, I hope to add elements to the GUI that will allow the user to customize the histogram coloring ranges and 
-                            iterations per pixel without directly editing the source code. I also hope to optimize the drawing of the fractal 
-                            by improving on my current implementation of the escape-time algorithm.
-                        </p>
-                        <p>
-                            Source code at <a href="https://github.com/tyler-coleman/fractal-generator" target="_blank">fractal-generator</a> on github.
-                        </p>
-                    </div>
-                    <div class="right-content">
-                        <img src="assets/fractal.png" id="FractalPic"/>
-                        <p style="font-size: 1.6em">tags</p>
-                        <div class="row">
-                            <div class="label" id="developer">c++</div>
-                            <div class="label" id="musician">graphics</div>
-                        </div>
-                        <div class="row">
-                            <div class="label" id="pilot">sdl</div>
-                            <div class="label" id="cook">file systems</div>
-                        </div>
-                    </div>
-
-                </div>
             </section>
 
             <section id="Contact" class="Yellowbg">
-                <div class="wrapper">
+                <div class="flex-wrapper">
                     <div class="heading">
                         <p>you made it this far. let's get in touch.</p>
                     </div>
