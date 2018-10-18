@@ -66,11 +66,12 @@ $(document).ready(() => {
         });
     });
 
-    $(window).scroll(() => {
-        const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 150;
-        const skillsTarget = $("#skills").offset().top;
+    const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 150;
+    const skillsTarget = $("#skills").offset().top;
+    let windowBottom = 0;
 
-        let windowBottom = 0;
+    $(window).scroll(() => {
+
         if (ready) {
             windowBottom = $(window).scrollTop() + window.innerHeight;
         }
@@ -81,7 +82,7 @@ $(document).ready(() => {
             $(".Navbar").removeClass('show');
         }
         if (windowBottom > skillsTarget) {
-            $('.skillbar').each(() => {
+            $('.skillbar').each(function() {
                 $(this).find('.skillbar-bar').animate({
                     width: $(this).attr('percent')
                 },1500);
