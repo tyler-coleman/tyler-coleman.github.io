@@ -82,5 +82,6 @@
 @media (max-width: 799px) {
     #Projects {
         clip-path: none;
+        -webkit-clip-path: none;
     }
 }
