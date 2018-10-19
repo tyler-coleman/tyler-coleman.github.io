@@ -66,11 +66,11 @@ $(document).ready(() => {
         });
     });
 
-    const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 150;
-    const skillsTarget = $("#skills").offset().top;
-    let windowBottom = 0;
-
     $(window).scroll(() => {
+
+        const navbarTarget = $(".hero-image").position().top + $(".hero-image").outerHeight(true) - 150;
+        const skillsTarget = $("#skills").offset().top;
+        let windowBottom = 0;
 
         if (ready) {
             windowBottom = $(window).scrollTop() + window.innerHeight;
