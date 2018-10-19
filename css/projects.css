@@ -78,3 +78,9 @@
 .project-input:focus {
     outline: none;
 }
+
+@media (max-width: 799px) {
+    #Projects {
+        clip-path: none;
+    }
+}
