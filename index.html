@@ -85,60 +85,33 @@
                         </div>
                 </div>
                 <div class="flex-wrapper">
-                    <div class="left-content" id="skills">
-                        <div class="skillbar" percent="77%">
-                            <div class="skillbar-title">
+                    <div class="left-content id="skills">
+                        <p style="font-size: 1.4em">skills</p>
+                        <div class="skill-area">
+                            <div class="skill">
+                                <span>C++</span>
+                            </div>
+                            <div class="skill"> 
                                 <span>HTML5</span>
                             </div>
-                            <div class="skillbar-bar"></div>
-                        </div>
-                        <div class="skillbar" percent="83%">
-                            <div class="skillbar-title">
+                            <div class="skill">
                                 <span>CSS3</span>
                             </div>
-                            <div class="skillbar-bar"></div>
-                        </div>
-                        <div class="skillbar" percent="80%">
-                                <div class="skillbar-title">
-                                    <span>JavaScript</span>
-                                </div>
-                                <div class="skillbar-bar"></div>
+                            <div class="skill"> 
+                                <span>JavaScript ES6</span>
                             </div>
-                        <div class="skillbar" percent="85%">
-                            <div class="skillbar-title">
+                            <div class="skill"> 
                                 <span>React.js</span>
                             </div>
-                            <div class="skillbar-bar"></div>
-                        </div>
-                        <div class="skillbar" percent="85%">
-                            <div class="skillbar-title red">
-                                <span>C/C++</span>
+                            <div class="skill"> 
+                                <span>Node.js</span>
                             </div>
-                            <div class="skillbar-bar red"></div>
-                        </div>
-                        <div class="skillbar" percent="65%">
-                            <div class="skillbar-title red">
+                            <div class="skill">
                                 <span>Java</span>
                             </div>
-                            <div class="skillbar-bar red"></div>
-                        </div>
-                        <div class="skillbar" percent="55%">
-                            <div class="skillbar-title red">
+                            <div class="skill">
                                 <span>Python</span>
                             </div>
-                            <div class="skillbar-bar red"></div>
-                        </div>
-                        <div class="skillbar" percent="75%">
-                            <div class="skillbar-title green">
-                                <span>Spanish</span>
-                            </div>
-                            <div class="skillbar-bar green"></div>
-                        </div>
-                        <div class="skillbar" percent="50%">
-                            <div class="skillbar-title green">
-                                <span>Arabic</span>
-                            </div>
-                            <div class="skillbar-bar green"></div>
                         </div>
                     </div>
                     <div class="right-content" id="school">
@@ -165,6 +138,55 @@
                         <h1>projects</h1>
                         <p>i like to code. here's some stuff i've been working on</p>
                         <input type="text" placeholder="search by tag" class="project-input" oninput="projectSearch()"/>
+                    </div>
+                </div>
+
+                <div class="project" match="false" id="rate">
+                    <div id="RateContent" class="flex-wrapper">
+                        <div class="left-content">
+                            <div class="Title">
+                                <h3 class="project-title" id="RateLabel">hot lunch</h3>
+                                <a href="https://hot-lunch.herokuapp.com/" target="_blank">
+                                    <img src="assets/externallink.png" class="LinkIcon" />
+                                </a>
+                            </div>
+                            <p>(React, Redux, Express, MongoDB Atlas, Cloudinary)</p>
+                            <p>
+                                Hot Lunch is a social media service that prioritizes content based on an interactive rating system, 
+                                allowing users greater opportunity for engagement and influence over the content that reaches their friends.
+                            </p>
+                            <p>
+                                It's built around a seamless and responsive React front end that encourages engagement via interactive UI components. 
+                                All requests from the front end are handled by an Express.js server, which in turn connects to remotely hosted storage 
+                                provided by both Cloudinary and MongoDB Atlas.
+                            </p>
+                            <p>
+                                Ive included an option to login with some preset credentials if you'd like to poke around and get a feel for 
+                                what's here.
+                            </p>
+                            <p>
+                                Source code at <a href="https://github.com/tyler-coleman/hot-lunch" target="_blank">hot-lunch</a> on github.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p style="font-size: 1.6em">tags</p>
+                            <div class="row">
+                                <div class="label" id="developer">react</div>
+                                <div class="label" id="developer">html</div>
+                                <div class="label" id="cook">heroku</div>
+                            </div>
+                            <div class="row">
+                                <div class="label" id="pilot">css</div>
+                                <div class="label" id="cook">redux</div>
+                                <div class="label" id="tck">rest</div>
+                                <div class="label" id="tck">express</div>
+                            </div>
+                            <div class="row">
+                                <div class="label" id="unemployed">cloudinary</div>
+                                <div class="label" id="unemployed">javascript</div>
+                                <div class="label" id="tck">mongodb</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -210,52 +232,7 @@
                         </div>
                     </div>
 
-                    <div class="project" match="false" id="rate">
-                        <div id="RateContent" class="flex-wrapper">
-                            <div class="left-content">
-                                <div class="Title">
-                                    <h3 class="project-title" id="RateLabel">hot lunch</h3>
-                                    <a href="https://hot-lunch.herokuapp.com/" target="_blank">
-                                        <img src="assets/externallink.png" class="LinkIcon" />
-                                    </a>
-                                </div>
-                                <p>(React,js, Redux, Express, MongoDB, Cloudinary)</p>
-                                <p>
-                                    Hot Lunch is a social media service that prioritizes content based on an interactive rating system, 
-                                    allowing users greater opportunity for engagement and influence over the content that reaches their friends.
-                                </p>
-                                <p>
-                                    It's built around a seamless and responsive React front end that encourages engagement via interactive UI components. 
-                                    All requests from the front end are handled by an Express.js server, which in turn connects to remotely hosted storage 
-                                    provided by both Cloudinary and MongoDB Atlas.
-                                </p>
-                                <p>
-                                    Ive included an option to login with some preset credentials if you'd like to poke around and get a feel for 
-                                    what's here.
-                                </p>
-                                <p>
-                                    Source code at <a href="https://github.com/tyler-coleman/hot-lunch" target="_blank">hot-lunch</a> on github.
-                                </p>
-                            </div>
-                            <div class="right-content">
-                                <p style="font-size: 1.6em">tags</p>
-                                <div class="row">
-                                    <div class="label" id="developer">react</div>
-                                    <div class="label" id="musician">html</div>
-                                </div>
-                                <div class="row">
-                                    <div class="label" id="pilot">css</div>
-                                    <div class="label" id="cook">redux</div>
-                                    <div class="label" id="tck">rest</div>
-                                    <div class="label" id="tck">jsx</div>
-                                </div>
-                                <div class="row">
-                                    <div class="label" id="unemployed">firebase</div>
-                                    <div class="label" id="unemployed">web</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="project" match="false" id="burger">
                         <div id="BurgerContent" class="flex-wrapper">

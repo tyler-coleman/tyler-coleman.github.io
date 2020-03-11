@@ -110,8 +110,36 @@
 
 #school {
     box-sizing: border-box;
-    border-left: 1px solid #555;
     top: 40px;
+}
+
+#skills h3 {
+    color: #555;
+    font-weight: 200;
+}
+
+.skill {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    width: auto;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.skill:hover {
+    background-color: #555;
+    color: white;
+    cursor: default;
+}
+
+.skill-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .skillbar {

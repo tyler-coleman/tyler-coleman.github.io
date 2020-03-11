@@ -6,7 +6,7 @@ const projects = {
         matches: 0
     },
     rate: {
-        tags: ['react', 'html', 'jsx', 'css', 'redux', 'rest', 'firebase', 'web'],
+        tags: ['react', 'html', 'express', 'css', 'redux', 'cloudinary', 'mongodb', 'heroku', 'rest', 'javascript'],
         matches: 0
     },
     burger: {
